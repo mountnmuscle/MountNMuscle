@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mount N Muscle | Junk Removal, Moving, TV Mounting — Charlotte Metro Area</title>
+  <meta name="description" content="Charlotte's hardest working hands. Mount N Muscle provides junk removal, moving, hauling, TV mounting, flooring, and handyman services across the entire Charlotte metro area including Fort Mill, Huntersville, Concord, Matthews, and more. Call 704-237-0164." />
+  <meta name="keywords" content="junk removal Charlotte NC, moving company Charlotte metro, TV mounting Charlotte, hauling Charlotte, handyman Charlotte area, junk removal Fort Mill, junk removal Huntersville, moving Concord NC, junk removal Matthews NC" />
+  <link rel="canonical" href="https://mountnmuscle.com/" />
+  <meta property="og:title" content="Mount N Muscle | Charlotte's Hardest Working Hands" />
+  <meta property="og:description" content="Junk removal, moving, TV mounting, hauling, flooring and handyman across the Charlotte metro area." />
+  <meta property="og:url" content="https://mountnmuscle.com" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mount N Muscle",
+    "url": "https://mountnmuscle.com",
+    "telephone": "704-237-0164",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charlotte",
+      "addressRegion": "NC",
+      "postalCode": "28278",
+      "addressCountry": "US"
+    },
+    "description": "Charlotte metro area junk removal, moving, hauling, TV mounting, flooring, and handyman services.",
+    "areaServed": [
+      "Charlotte, NC","Fort Mill, SC","Tega Cay, SC","Lake Wylie, SC",
+      "Ballantyne, NC","Mount Holly, NC","Huntersville, NC","Concord, NC",
+      "Mooresville, NC","Indian Trail, NC","Matthews, NC","Pineville, NC",
+      "Rock Hill, SC","Gastonia, NC","Waxhaw, NC","Stallings, NC"
+    ],
+    "serviceType": ["Junk Removal","Moving","Hauling","TV Mounting","Flooring","Handyman Services"],
+    "sameAs": [
+      "https://instagram.com/mountnmuscle",
+      "https://facebook.com/mountnmuscle",
+      "https://youtube.com/@mountnmuscle",
+      "https://tiktok.com/@mountnmuscle"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --gold-dark: #A07830;
+      --black: #0A0A0A;
+      --dark: #111111;
+      --dark-2: #1A1A1A;
+      --dark-3: #252525;
+      --white: #F5F0E8;
+      --gray: #888888;
+      --gray-light: #BBBBBB;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.9rem 2.5rem;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; letter-spacing: 0.04em; color: var(--gold); text-decoration: none; }
+    .nav-logo span { color: var(--white); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--gray-light); text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { display: flex; align-items: center; gap: 0.5rem; font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--black); background: var(--gold); text-decoration: none; padding: 0.5rem 1.2rem; letter-spacing: 0.05em; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--gold); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      padding-top: 64px;
+    }
+
+    .hero-left {
+      background: var(--dark);
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 4rem 3.5rem 4rem 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-left::after {
+      content: '';
+      position: absolute; top: 0; right: 0; bottom: 0;
+      width: 1px; background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.3), transparent);
+    }
+    .hero-glow {
+      position: absolute; top: -100px; left: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;
+    }
+    .eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+    .hero-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 6vw, 6.5rem);
+      line-height: 0.92; letter-spacing: 0.02em;
+      color: var(--white); margin-bottom: 1rem;
+    }
+    .hero-h1 .g { color: var(--gold); }
+    .hero-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+      font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gray); margin-bottom: 2.5rem; max-width: 480px;
+    }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--gold); color: var(--black);
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.35rem; letter-spacing: 0.1em;
+      padding: 0.9rem 2rem; text-decoration: none; border: 2px solid var(--gold);
+      transition: all 0.2s;
+    }
+    .btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent; color: var(--gold);
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.35rem; letter-spacing: 0.1em;
+      padding: 0.9rem 2rem; text-decoration: none; border: 2px solid var(--gold);
+      transition: all 0.2s; cursor: pointer;
+    }
+    .btn-outline:hover { background: rgba(201,168,76,0.08); }
+    .hero-stats { display: flex; gap: 2.5rem; }
+    .hstat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--gold); line-height: 1; }
+    .hstat-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); margin-top: 2px; }
+
+    /* Hero Right — Quote Form */
+    .hero-right {
+      background: var(--gold);
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 3rem 2.5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-right::before {
+      content: 'MNM';
+      position: absolute; font-family: 'Bebas Neue', sans-serif;
+      font-size: 18rem; color: rgba(0,0,0,0.06);
+      line-height: 1; right: -2rem; bottom: -2rem; pointer-events: none; letter-spacing: -0.05em;
+    }
+    .quote-box {
+      background: var(--black); padding: 2rem 1.8rem;
+      width: 100%; max-width: 400px; position: relative; z-index: 1;
+    }
+    .quote-box-header { margin-bottom: 1.2rem; }
+    .quote-box-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; letter-spacing: 0.06em; color: var(--gold); line-height: 1; }
+    .quote-box-header p { font-size: 0.78rem; color: var(--gray); letter-spacing: 0.06em; margin-top: 0.25rem; }
+    .fg { margin-bottom: 0.75rem; }
+    .fg label { display: block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.28rem; }
+    .fg input, .fg select, .fg textarea {
+      width: 100%; background: var(--dark-2); border: 1px solid var(--dark-3);
+      color: var(--white); padding: 0.6rem 0.75rem;
+      font-family: 'Barlow', sans-serif; font-size: 0.88rem;
+      outline: none; transition: border-color 0.2s; appearance: none;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--gold); }
+    .fg select option { background: var(--dark-2); }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .fsub {
+      width: 100%; background: var(--gold); color: var(--black);
+      border: none; font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem; letter-spacing: 0.1em;
+      padding: 0.85rem; cursor: pointer; transition: all 0.2s; margin-top: 0.3rem;
+    }
+    .fsub:hover { background: var(--gold-light); }
+
+    /* ── SHARED ── */
+    .section { padding: 5rem 2rem; }
+    .contain { max-width: 1200px; margin: 0 auto; }
+    .slabel {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.7rem;
+    }
+    .slabel::before { content: ''; display: block; width: 22px; height: 1px; background: var(--gold); }
+    .stitle { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.4rem, 3.8vw, 3.8rem); letter-spacing: 0.02em; line-height: 0.95; color: var(--white); margin-bottom: 0.8rem; }
+    .stitle .g { color: var(--gold); }
+    .ssub { font-size: 0.97rem; color: var(--gray); line-height: 1.75; max-width: 540px; }
+
+    .fi { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fi.vis { opacity: 1; transform: translateY(0); }
+
+    /* ── SERVICES ── */
+    #services { background: var(--dark); }
+    .srv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--dark-3); margin-top: 3rem; border: 1px solid var(--dark-3); }
+    .srv-card { background: var(--dark-2); padding: 2rem; position: relative; overflow: hidden; transition: background 0.3s; }
+    .srv-card:hover { background: var(--dark-3); }
+    .srv-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.4s ease; }
+    .srv-card:hover::after { width: 100%; }
+    .srv-icon { font-size: 1.8rem; margin-bottom: 0.9rem; }
+    .srv-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.55rem; letter-spacing: 0.04em; color: var(--white); margin-bottom: 0.45rem; }
+    .srv-card p { font-size: 0.84rem; color: var(--gray); line-height: 1.65; }
+    .srv-tag { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-top: 0.75rem; }
+
+    /* ── PROMISE ── */
+    #promise { background: var(--black); }
+    .prom-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+    .prom-card { border-left: 2px solid var(--gold); padding-left: 1.4rem; }
+    .prom-card h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.04em; color: var(--gold); margin-bottom: 0.4rem; }
+    .prom-card p { font-size: 0.84rem; color: var(--gray); line-height: 1.7; }
+
+    /* ── AREAS ── */
+    #area { background: var(--dark); }
+    .area-intro { margin-bottom: 2.5rem; }
+    .area-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1.5rem; }
+    .area-card {
+      background: var(--dark-2); border: 1px solid var(--dark-3);
+      padding: 1.1rem 1.2rem; text-decoration: none;
+      display: flex; align-items: center; gap: 0.8rem;
+      transition: all 0.2s;
+    }
+    .area-card:hover { border-color: var(--gold); background: var(--dark-3); }
+    .area-dot { width: 7px; height: 7px; background: var(--gold); flex-shrink: 0; }
+    .area-name { font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.04em; color: var(--white); }
+    .area-state { font-size: 0.68rem; color: var(--gray); letter-spacing: 0.08em; }
+    .area-arrow { margin-left: auto; color: var(--gold); font-size: 0.75rem; opacity: 0; transition: opacity 0.2s; }
+    .area-card:hover .area-arrow { opacity: 1; }
+    .area-note { font-size: 0.8rem; color: var(--gray); margin-top: 1.5rem; font-style: italic; }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--black); }
+    .gtabs { display: flex; margin-top: 2rem; margin-bottom: 1.8rem; }
+    .gtab { font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.55rem 1.4rem; cursor: pointer; border: 1px solid var(--dark-3); background: var(--dark-2); color: var(--gray); transition: all 0.2s; }
+    .gtab.active { background: var(--gold); color: var(--black); border-color: var(--gold); }
+    .ggrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    .gitem { aspect-ratio: 4/3; background: var(--dark-2); border: 1px solid var(--dark-3); display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer; }
+    .gitem:first-child { grid-column: span 2; aspect-ratio: 16/9; }
+    .gph { text-align: center; padding: 1rem; }
+    .gph p { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--gold); }
+    .gph span { font-size: 0.68rem; color: var(--gray); display: block; margin-top: 0.2rem; }
+
+    /* ── ABOUT ── */
+    #about { background: var(--dark); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+    .about-img { background: var(--dark-2); border: 1px solid var(--dark-3); aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .about-img::before { content: ''; position: absolute; top: 0; right: 0; width: 35%; height: 35%; background: var(--gold); opacity: 0.12; }
+    .about-img-ph { text-align: center; }
+    .about-img-ph p { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--gold); }
+    .about-img-ph span { font-size: 0.7rem; color: var(--gray); }
+    .about-copy h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 3.5vw, 3.2rem); letter-spacing: 0.02em; line-height: 0.95; color: var(--white); margin-bottom: 1.2rem; }
+    .about-copy h2 span { color: var(--gold); }
+    .about-copy p { font-size: 0.93rem; color: var(--gray); line-height: 1.82; margin-bottom: 1rem; }
+    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--dark-3); }
+    .astat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; color: var(--gold); line-height: 1; }
+    .astat-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-top: 0.2rem; }
+
+    /* ── REFERRAL ── */
+    #referral { background: var(--black); }
+    .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+    .ref-copy p { font-size: 0.93rem; color: var(--gray); line-height: 1.82; margin-bottom: 1rem; }
+    .ref-tiers { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.5rem; }
+    .ref-tier { background: var(--dark-2); border: 1px solid var(--dark-3); padding: 1.4rem; display: flex; gap: 1.2rem; align-items: flex-start; transition: border-color 0.2s; }
+    .ref-tier:hover { border-color: var(--gold); }
+    .ref-tier-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .ref-tier h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.05em; color: var(--gold); margin-bottom: 0.3rem; }
+    .ref-tier p { font-size: 0.83rem; color: var(--gray); line-height: 1.65; }
+    .ref-how { background: var(--dark-2); border: 1px solid var(--dark-3); padding: 2rem; }
+    .ref-how h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.05em; color: var(--gold); margin-bottom: 1.2rem; }
+    .ref-step { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.2rem; }
+    .ref-step-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--gold); line-height: 1; flex-shrink: 0; min-width: 32px; }
+    .ref-step p { font-size: 0.87rem; color: var(--gray); line-height: 1.7; padding-top: 0.2rem; }
+    .ref-step strong { color: var(--white); }
+    .ref-cta-box { background: var(--gold); padding: 1.4rem; margin-top: 1.5rem; text-align: center; }
+    .ref-cta-box p { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.08em; color: var(--black); margin-bottom: 0.3rem; }
+    .ref-cta-box span { font-size: 0.78rem; color: rgba(0,0,0,0.6); }
+
+    /* ── REVIEWS ── */
+    #reviews { background: var(--dark); }
+    .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 3rem; }
+    .rev-card { background: var(--dark-2); border: 1px solid var(--dark-3); padding: 1.5rem; }
+    .rev-stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+    .rev-text { font-size: 0.86rem; color: var(--gray-light); line-height: 1.72; margin-bottom: 1rem; font-style: italic; }
+    .rev-author { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.07em; color: var(--white); text-transform: uppercase; }
+    .rev-loc { font-size: 0.7rem; color: var(--gray); letter-spacing: 0.07em; }
+    .rev-cta { text-align: center; margin-top: 2.5rem; }
+    .rev-cta a { font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; transition: opacity 0.2s; }
+    .rev-cta a:hover { opacity: 0.7; }
+
+    /* ── VIP ── */
+    #vip { background: var(--gold); padding: 4rem 2rem; }
+    .vip-inner { max-width: 820px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .vip-copy h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 3.5vw, 3rem); letter-spacing: 0.02em; line-height: 0.95; color: var(--black); margin-bottom: 0.7rem; }
+    .vip-copy p { font-size: 0.88rem; color: rgba(0,0,0,0.6); line-height: 1.72; }
+    .vip-form { display: flex; flex-direction: column; gap: 0.65rem; }
+    .vip-form input { width: 100%; background: rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.18); color: var(--black); padding: 0.72rem 1rem; font-family: 'Barlow', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; }
+    .vip-form input::placeholder { color: rgba(0,0,0,0.4); }
+    .vip-form input:focus { border-color: var(--black); }
+    .vip-sub { background: var(--black); color: var(--gold); border: none; font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.1em; padding: 0.82rem; cursor: pointer; transition: opacity 0.2s; }
+    .vip-sub:hover { opacity: 0.85; }
+
+    /* ── FAQ ── */
+    #faq { background: var(--black); }
+    .faq-list { margin-top: 3rem; }
+    .faq-item { border-bottom: 1px solid var(--dark-3); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 1.1rem 0; font-family: 'Barlow Condensed', sans-serif; font-size: 1.02rem; font-weight: 700; color: var(--white); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; transition: color 0.2s; }
+    .faq-q:hover { color: var(--gold); }
+    .faq-chev { color: var(--gold); font-size: 0.85rem; flex-shrink: 0; transition: transform 0.3s; }
+    .faq-item.open .faq-chev { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.1rem; }
+    .faq-a p { font-size: 0.88rem; color: var(--gray); line-height: 1.82; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--dark); border-top: 1px solid var(--dark-3); padding: 3.5rem 2rem 1.5rem; }
+    .foot-inner { max-width: 1200px; margin: 0 auto; }
+    .foot-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .foot-brand-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; letter-spacing: 0.04em; color: var(--gold); }
+    .foot-brand-logo span { color: var(--white); }
+    .foot-brand p { font-size: 0.83rem; color: var(--gray); line-height: 1.72; margin-top: 0.7rem; max-width: 260px; }
+    .foot-socials { display: flex; gap: 0.65rem; margin-top: 1rem; }
+    .foot-soc { width: 34px; height: 34px; border: 1px solid var(--dark-3); display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--gray); font-size: 0.72rem; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; transition: all 0.2s; }
+    .foot-soc:hover { border-color: var(--gold); color: var(--gold); }
+    .foot-col h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .foot-col ul { list-style: none; }
+    .foot-col ul li { margin-bottom: 0.45rem; }
+    .foot-col ul li a { font-size: 0.82rem; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+    .foot-col ul li a:hover { color: var(--white); }
+    .foot-bottom { border-top: 1px solid var(--dark-3); padding-top: 1.4rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .foot-bottom p { font-size: 0.73rem; color: var(--gray); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      #hero { grid-template-columns: 1fr; }
+      .hero-right { padding: 3rem 2rem; }
+      .hero-left { padding: 3rem 2rem; min-height: 70vh; }
+    }
+    @media (max-width: 800px) {
+      .srv-grid { grid-template-columns: 1fr 1fr; }
+      .prom-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .area-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid, .ref-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .rev-grid { grid-template-columns: 1fr; }
+      .vip-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .foot-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 520px) {
+      .srv-grid { grid-template-columns: 1fr; }
+      .area-grid { grid-template-columns: 1fr; }
+      .ggrid { grid-template-columns: 1fr; }
+      .gitem:first-child { grid-column: span 1; aspect-ratio: 4/3; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+      .frow { grid-template-columns: 1fr; }
+      .foot-top { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Mount <span>N</span> Muscle</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#area">Areas</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#referral">Referrals</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="tel:7042370164" class="nav-cta">📞 704-237-0164</a>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-glow"></div>
+    <div class="eyebrow">Charlotte Metro Area</div>
+    <h1 class="hero-h1">Mount<br /><span class="g">N</span><br />Muscle</h1>
+    <p class="hero-tagline">Charlotte's Hardest Working Hands — Strength You Can Schedule.</p>
+    <div class="hero-btns">
+      <a href="tel:7042370164" class="btn-gold">📞 Call or Text Now</a>
+      <a href="#services" class="btn-outline">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hstat-num">6+</div><div class="hstat-label">Services</div></div>
+      <div><div class="hstat-num">16</div><div class="hstat-label">Areas Served</div></div>
+      <div><div class="hstat-num">10%</div><div class="hstat-label">Review Discount</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="quote-box">
+      <div class="quote-box-header">
+        <h2>Get a Free Quote</h2>
+        <p>We respond same day — no waiting, no runaround.</p>
+      </div>
+      <form action="https://formspree.io/f/mjgzpyga" method="POST">
+        <div class="frow">
+          <div class="fg"><label>First Name</label><input type="text" name="first_name" placeholder="John" required /></div>
+          <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" /></div>
+        </div>
+        <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="704-000-0000" required /></div>
+        <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@email.com" /></div>
+        <div class="fg">
+          <label>Service Needed</label>
+          <select name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Moving</option>
+            <option>Hauling</option>
+            <option>Junk Removal</option>
+            <option>TV Mounting</option>
+            <option>Flooring</option>
+            <option>Handyman</option>
+            <option>Multiple Services</option>
+          </select>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Preferred Day</label><input type="date" name="preferred_day" /></div>
+          <div class="fg">
+            <label>Preferred Time</label>
+            <select name="preferred_time">
+              <option value="" disabled selected>Time</option>
+              <option>Morning (8am–12pm)</option>
+              <option>Afternoon (12pm–5pm)</option>
+              <option>Evening (5pm–8pm)</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Tell Us About the Job</label><textarea name="message" rows="2" placeholder="Brief description..."></textarea></div>
+        <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request" />
+        <button type="submit" class="fsub">Submit Request →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="contain">
+    <div class="slabel fi">What We Do</div>
+    <h2 class="stitle fi">Every Job. <span class="g">Done Right.</span></h2>
+    <p class="ssub fi">One call covers it all — from clearing out the garage to mounting your flat screen to laying brand new floors across the Charlotte metro area.</p>
+    <div class="srv-grid">
+      <div class="srv-card fi">
+        <div class="srv-icon">🚛</div>
+        <h3>Moving</h3>
+        <p>Local moving for homes and apartments across the Charlotte metro. We show up on time, handle your belongings with care, and get you settled without the stress.</p>
+        <span class="srv-tag">Charlotte · Fort Mill · Concord · Huntersville</span>
+      </div>
+      <div class="srv-card fi">
+        <div class="srv-icon">💪</div>
+        <h3>Hauling</h3>
+        <p>Furniture, appliances, equipment, debris — if it needs moving and you do not want to deal with it, we haul it away fast and efficiently.</p>
+        <span class="srv-tag">All Charlotte Metro Areas</span>
+      </div>
+      <div class="srv-card fi">
+        <div class="srv-icon">🗑️</div>
+        <h3>Junk Removal</h3>
+        <p>Full garage cleanouts, estate clearances, single-item pickups. We load everything, haul it out, and leave the space clean. On-site pricing — no phone guesses.</p>
+        <span class="srv-tag">All Charlotte Metro Areas</span>
+      </div>
+      <div class="srv-card fi">
+        <div class="srv-icon">📺</div>
+        <h3>TV Mounting</h3>
+        <p>Professional TV mounting with clean cable management. We find the studs, level it perfectly, and make it look like it was always meant to be there.</p>
+        <span class="srv-tag">Charlotte · Ballantyne · Tega Cay · Matthews</span>
+      </div>
+      <div class="srv-card fi">
+        <div class="srv-icon">🏠</div>
+        <h3>Flooring</h3>
+        <p>Hardwood, LVP, tile — we install it right the first time. One room or a whole house, we bring the skill and attention to detail that the job demands.</p>
+        <span class="srv-tag">Charlotte · Gastonia · Indian Trail · Waxhaw</span>
+      </div>
+      <div class="srv-card fi">
+        <div class="srv-icon">🔧</div>
+        <h3>Handyman</h3>
+        <p>Furniture assembly, repairs, installations, and the odds and ends that pile up. If it needs hands-on attention around the house, we handle it.</p>
+        <span class="srv-tag">All Charlotte Metro Areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section id="promise" class="section">
+  <div class="contain">
+    <div class="slabel fi">Our Commitment</div>
+    <h2 class="stitle fi">The Mount N Muscle <span class="g">Promise</span></h2>
+    <div class="prom-grid">
+      <div class="prom-card fi"><h4>Same-Day Response</h4><p>When you reach out, you hear back the same day. No call centers, no hold music — just a direct line to the person doing the job.</p></div>
+      <div class="prom-card fi"><h4>On-Site Pricing</h4><p>We assess the job in person before quoting. What you see is what you pay — no inflated phone estimates, no surprises at the end.</p></div>
+      <div class="prom-card fi"><h4>No Hidden Fees</h4><p>The price we agree on is the final price. No add-ons, no extras at the door. Honest pricing every single time.</p></div>
+      <div class="prom-card fi"><h4>We Show Up</h4><p>If we book a time, we are there. Your schedule is not a suggestion to us — it is a commitment we take seriously.</p></div>
+      <div class="prom-card fi"><h4>10% Review Discount</h4><p>Leave us a Google review after your job and get 10% off your next service. Our reputation is earned one honest job at a time.</p></div>
+      <div class="prom-card fi"><h4>Local Solo Operator</h4><p>You are not hiring a franchise call center. You are hiring a Charlotte local who takes pride in every job like it is their own home.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="area" class="section">
+  <div class="contain">
+    <div class="slabel fi">Where We Work</div>
+    <h2 class="stitle fi">Serving the <span class="g">Charlotte Metro Area</span></h2>
+    <p class="ssub fi area-intro">Based in the Steele Creek area, we cover all of greater Charlotte and the surrounding communities across North and South Carolina. If you are within the Charlotte metro region, we come to you.</p>
+    <div class="area-grid fi">
+      <a href="locations/charlotte.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Charlotte</div><div class="area-state">NC — Primary Area</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/huntersville.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Huntersville</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/concord.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Concord</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/mooresville.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Mooresville</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/matthews.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Matthews</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/pineville.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Pineville</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/ballantyne.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Ballantyne</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/mount-holly.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Mount Holly</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/gastonia.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Gastonia</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/waxhaw.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Waxhaw</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/stallings.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Stallings</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/indian-trail.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Indian Trail</div><div class="area-state">NC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/fort-mill.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Fort Mill</div><div class="area-state">SC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/tega-cay.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Tega Cay</div><div class="area-state">SC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/lake-wylie.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Lake Wylie</div><div class="area-state">SC</div></div><span class="area-arrow">→</span></a>
+      <a href="locations/rock-hill.html" class="area-card"><div class="area-dot"></div><div><div class="area-name">Rock Hill</div><div class="area-state">SC</div></div><span class="area-arrow">→</span></a>
+    </div>
+    <p class="area-note fi">Not seeing your city? Call or text — if you are in the greater Charlotte region, there is a good chance we can get to you.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="contain">
+    <div class="slabel fi">Our Work</div>
+    <h2 class="stitle fi">Real Jobs. <span class="g">Real Results.</span></h2>
+    <p class="ssub fi">From full junk removal cleanouts to fresh LVP flooring installs — every job gets the same level of care and attention.</p>
+    <div class="gtabs">
+      <button class="gtab active" data-filter="all">All Work</button>
+      <button class="gtab" data-filter="ba">Before / After</button>
+      <button class="gtab" data-filter="action">In Action</button>
+    </div>
+    <div class="ggrid fi">
+      <div class="gitem"><div class="gph"><p>Featured Job</p><span>Add your best photo here</span></div></div>
+      <div class="gitem"><div class="gph"><p>Before / After</p><span>Junk Removal Cleanout</span></div></div>
+      <div class="gitem"><div class="gph"><p>TV Mounting</p><span>Action Shot</span></div></div>
+      <div class="gitem"><div class="gph"><p>Flooring Install</p><span>Before / After</span></div></div>
+      <div class="gitem"><div class="gph"><p>Hauling Job</p><span>Action Shot</span></div></div>
+      <div class="gitem"><div class="gph"><p>Moving Day</p><span>Action Shot</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="contain">
+    <div class="about-grid">
+      <div class="about-img fi"><div class="about-img-ph"><p>Your Photo Here</p><span>Owner — Mount N Muscle</span></div></div>
+      <div class="about-copy fi">
+        <div class="slabel">Who We Are</div>
+        <h2>Charlotte Built.<br /><span>Charlotte Proud.</span></h2>
+        <p>Mount N Muscle was started on one straightforward idea — the Charlotte area deserves a service provider who shows up, does the work right, and treats your home the same way they would treat their own.</p>
+        <p>We are a solo operation rooted in the Steele Creek area, covering the communities we actually live in and care about. Every job is handled by the same experienced hands — no subcontractors, no strangers showing up in an unmarked van.</p>
+        <p>Whether that means hauling a full basement worth of junk out in Fort Mill or mounting a gallery wall in Huntersville — you get the same focus and commitment to quality on every single visit.</p>
+        <div class="about-stats">
+          <div><div class="astat-num">6+</div><div class="astat-label">Services</div></div>
+          <div><div class="astat-num">16</div><div class="astat-label">Areas Served</div></div>
+          <div><div class="astat-num">100%</div><div class="astat-label">Local</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL -->
+<section id="referral" class="section">
+  <div class="contain">
+    <div class="slabel fi">Spread the Word</div>
+    <h2 class="stitle fi">The Neighbor <span class="g">Program</span></h2>
+    <p class="ssub fi">We believe real relationships build real businesses. No points systems, no app — just genuine thank-yous for people who trust us enough to share us.</p>
+    <div class="ref-grid">
+      <div class="ref-copy fi">
+        <p>When someone in your neighborhood, family, or circle needs a hand — and you point them our way — we want to thank you the way neighbors thank neighbors. Not with a coupon code. With something real.</p>
+        <p>Every referral that books a job earns you a handwritten thank-you and a reward delivered to your door. The more you share Mount N Muscle, the more we invest in the relationship.</p>
+        <div class="ref-tiers">
+          <div class="ref-tier">
+            <div class="ref-tier-icon">🎂</div>
+            <div>
+              <h4>First Referral — The Sweet Thank You</h4>
+              <p>Your first referral that books a job earns you a cake or dessert gift from a local Charlotte bakery, delivered with a handwritten note. Something you will actually remember.</p>
+            </div>
+          </div>
+          <div class="ref-tier">
+            <div class="ref-tier-icon">⭐</div>
+            <div>
+              <h4>Three Referrals — Founding Client Status</h4>
+              <p>Three booked referrals puts you on our Founding Client list — priority scheduling, rate lock guarantee, and occasional surprise appreciation gifts throughout the year.</p>
+            </div>
+          </div>
+          <div class="ref-tier">
+            <div class="ref-tier-icon">👑</div>
+            <div>
+              <h4>Five+ Referrals — Community Partner</h4>
+              <p>Five or more referrals and you become a Mount N Muscle Community Partner. Exclusive perks, first access to open slots, and a relationship we take seriously for the long haul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fi">
+        <div class="ref-how">
+          <h3>How It Works</h3>
+          <div class="ref-step"><div class="ref-step-num">1</div><p><strong>You refer a friend, neighbor, or family member</strong> who needs junk removal, moving, hauling, TV mounting, flooring, or handyman work.</p></div>
+          <div class="ref-step"><div class="ref-step-num">2</div><p><strong>They mention your name when booking</strong> — call, text, or on the quote form. That is all it takes to track it.</p></div>
+          <div class="ref-step"><div class="ref-step-num">3</div><p><strong>Their job gets completed</strong> and they have a great experience. Mount N Muscle delivers quality — that part is on us.</p></div>
+          <div class="ref-step"><div class="ref-step-num">4</div><p><strong>We show up at your door</strong> with a thank you worth remembering. No gift cards, no codes — something personal and real.</p></div>
+          <div class="ref-cta-box">
+            <p>Ready to Refer Someone?</p>
+            <span>Call or text 704-237-0164 and let us know — we will handle the rest.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+  <div class="contain">
+    <div class="slabel fi">What Clients Say</div>
+    <h2 class="stitle fi">Real Reviews. <span class="g">Real People.</span></h2>
+    <div class="rev-grid">
+      <div class="rev-card fi">
+        <div class="rev-stars">★★★★★</div>
+        <p class="rev-text">"Called in the morning, they were there by noon. Hauled out an entire basement full of junk without a single complaint. Pricing was fair and completely upfront. Will absolutely use again."</p>
+        <div class="rev-author">Marcus T.</div>
+        <div class="rev-loc">Fort Mill, SC · Junk Removal</div>
+      </div>
+      <div class="rev-card fi">
+        <div class="rev-stars">★★★★★</div>
+        <p class="rev-text">"Had my TV mounted and the cable management is immaculate. Looks completely professional. Showed up exactly on time and the whole job was done faster than I expected."</p>
+        <div class="rev-author">Keisha R.</div>
+        <div class="rev-loc">Ballantyne, NC · TV Mounting</div>
+      </div>
+      <div class="rev-card fi">
+        <div class="rev-stars">★★★★★</div>
+        <p class="rev-text">"Used Mount N Muscle for a full apartment move in Concord. Everything was handled carefully and efficiently. No hidden fees — exactly what was quoted. Great experience start to finish."</p>
+        <div class="rev-author">David L.</div>
+        <div class="rev-loc">Concord, NC · Moving</div>
+      </div>
+    </div>
+    <div class="rev-cta fi">
+      <a href="https://g.page/r/mountnmuscle/review" target="_blank">Leave a Google Review — Get 10% Off Your Next Service →</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIP -->
+<section id="vip">
+  <div class="vip-inner">
+    <div class="vip-copy">
+      <h2>Join the VIP Text List</h2>
+      <p>Priority booking, exclusive deals, and first access to open slots across the Charlotte metro area. Charlotte's hardest working hands — on speed dial.</p>
+    </div>
+    <form class="vip-form" action="https://formspree.io/f/mjgzpyga" method="POST">
+      <input type="text" name="vip_name" placeholder="Your Name" required />
+      <input type="tel" name="vip_phone" placeholder="Phone Number" required />
+      <input type="text" name="vip_zip" placeholder="Zip Code" required />
+      <input type="hidden" name="_subject" value="Mount N Muscle - VIP List Signup" />
+      <button type="submit" class="vip-sub">Join the VIP List →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="contain">
+    <div class="slabel fi">Got Questions</div>
+    <h2 class="stitle fi">Frequently <span class="g">Asked</span></h2>
+    <div class="faq-list fi">
+      <div class="faq-item"><button class="faq-q">How much does junk removal cost in the Charlotte area? <span class="faq-chev">▼</span></button><div class="faq-a"><p>Junk removal pricing across the Charlotte metro depends on volume and item type. We always price on-site after seeing the job so the number is accurate and fair — no inflated phone estimates. Call or text 704-237-0164 for a same-day assessment.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you serve cities outside of Charlotte proper? <span class="faq-chev">▼</span></button><div class="faq-a"><p>Yes — we cover the full Charlotte metro area including Huntersville, Concord, Mooresville, Matthews, Pineville, Ballantyne, Mount Holly, Gastonia, Waxhaw, Stallings, Indian Trail, Fort Mill, Tega Cay, Lake Wylie, and Rock Hill. If you are in the broader Charlotte region, reach out and we will confirm.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How do I book a TV mounting service near Charlotte? <span class="faq-chev">▼</span></button><div class="faq-a"><p>The fastest way is to call or text 704-237-0164. You can also submit the quote form at the top of this page and we will get back to you the same day to confirm your time slot.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is the estimate free? <span class="faq-chev">▼</span></button><div class="faq-a"><p>Always free. We come out, assess the job, give you a clear number, and only start working when you approve it. No pressure, no obligation.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What flooring types do you install in the Charlotte area? <span class="faq-chev">▼</span></button><div class="faq-a"><p>We install hardwood, luxury vinyl plank (LVP), and tile throughout the Charlotte metro. Whether it is a single room or a whole-home install, we handle it with the same care and attention to detail.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How does the referral program work? <span class="faq-chev">▼</span></button><div class="faq-a"><p>Simple — refer a friend or neighbor who books a job and have them mention your name. Once their job is complete, we deliver a real thank-you gift to your door. No apps, no codes. Three referrals earns Founding Client status with priority booking and a rate lock. See the Neighbor Program section above for full details.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you do handyman work in addition to moving and junk removal? <span class="faq-chev">▼</span></button><div class="faq-a"><p>Yes — we handle furniture assembly, general repairs, installations, and a wide range of handyman tasks across the Charlotte area. If you are unsure whether we cover your specific job, just call or text and we will let you know.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-brand-logo">Mount <span>N</span> Muscle</div>
+        <p>Charlotte's hardest working hands. Junk removal, moving, hauling, TV mounting, flooring, and handyman services across the greater Charlotte metro area.</p>
+        <div class="foot-socials">
+          <a href="https://instagram.com/mountnmuscle" target="_blank" class="foot-soc">IG</a>
+          <a href="https://facebook.com/mountnmuscle" target="_blank" class="foot-soc">FB</a>
+          <a href="https://youtube.com/@mountnmuscle" target="_blank" class="foot-soc">YT</a>
+          <a href="https://tiktok.com/@mountnmuscle" target="_blank" class="foot-soc">TK</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Moving</a></li>
+          <li><a href="#services">Hauling</a></li>
+          <li><a href="#services">Junk Removal</a></li>
+          <li><a href="#services">TV Mounting</a></li>
+          <li><a href="#services">Flooring</a></li>
+          <li><a href="#services">Handyman</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="locations/charlotte.html">Charlotte, NC</a></li>
+          <li><a href="locations/huntersville.html">Huntersville, NC</a></li>
+          <li><a href="locations/concord.html">Concord, NC</a></li>
+          <li><a href="locations/matthews.html">Matthews, NC</a></li>
+          <li><a href="locations/fort-mill.html">Fort Mill, SC</a></li>
+          <li><a href="locations/rock-hill.html">Rock Hill, SC</a></li>
+          <li><a href="locations/gastonia.html">Gastonia, NC</a></li>
+          <li><a href="locations/mooresville.html">Mooresville, NC</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:7042370164">704-237-0164</a></li>
+          <li><a href="#hero">Get a Free Quote</a></li>
+          <li><a href="#vip">Join VIP List</a></li>
+          <li><a href="#referral">Referral Program</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Mount N Muscle. All rights reserved. Charlotte, NC 28278 · 704-237-0164</p>
+      <p>Serving Charlotte, NC and the surrounding metro area.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll fade-in
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('vis'), i * 70);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  // Gallery tabs
+  document.querySelectorAll('.gtab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.gtab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
