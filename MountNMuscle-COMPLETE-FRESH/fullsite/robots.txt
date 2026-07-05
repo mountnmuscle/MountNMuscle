@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mountnmuscle.com/sitemap.xml
