@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# AI crawlers — allowed (discovery surface)
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
