@@ -69,7 +69,7 @@
       <h1 class="h1">Handyman in Charlotte, NC</h1>
       <p class="lede">Mount N Muscle handles handyman work and furniture assembly out of Steele Creek in southwest Charlotte. Labor is $70 an hour with a two-hour minimum, which comes to $140, and that minimum does not go up on a Saturday. Call or text 704-237-0164 with your list and you will get a real number before anybody shows up.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -129,7 +129,7 @@
         <ul><li>Zone 1 (no fee): Charlotte S/SW, Steele Creek, Pineville, Lake Wylie, Tega Cay</li><li>Zone 2 (+$29): Fort Mill, Ballantyne, Mount Holly, central Charlotte</li><li>Zone 3 (+$49): Rock Hill, Gastonia, Matthews, Stallings, Indian Trail, Waxhaw, Huntersville</li><li>Zone 4 (+$89): Concord, Mooresville</li></ul>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -146,6 +146,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="handyman">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -197,6 +199,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal &amp; Home Services in Rock Hill, SC</h1>
       <p class="lede">Mount N Muscle is an owner-operated hauling and labor outfit based in Steele Creek, about 25 minutes down I-77 from the Dave Lyle exit. We work all over Rock Hill, from Old Town and the Oakland Avenue blocks around Winthrop out to Riverwalk, India Hook and the Newport side. Rock Hill sits in our Zone 3, so a flat $49 trip fee applies here and is quoted up front before you book.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -118,7 +118,7 @@
         <p>Every quote includes the $49 Zone 3 trip fee. Same-day service, when we can do it, adds $40 — we are often available same day, but we will tell you straight whether we can hit your window rather than promise one we cannot make.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -135,6 +135,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="rock-hill">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -186,6 +188,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

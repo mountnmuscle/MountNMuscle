@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal &amp; Home Services in Tega Cay, SC</h1>
       <p class="lede">Mount N Muscle works Tega Cay every week, from the original 1970s peninsula streets off Tega Cay Drive out to the newer mainland builds along Gold Hill Road and SC-160. We run junk removal, hauling, moving labor, TV mounting, flooring and handyman work out of Steele Creek, which is a straight shot down Steele Creek Road to the state line. Tega Cay is in our Zone 1, so there is no trip fee. Call or text 704-237-0164.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -117,7 +117,7 @@
         <p>If your community requires architectural review, that applies to exterior changes like paint, fences, roofs and landscaping, not to interior flooring, so you can book a floor without waiting on an ARC decision that can take anywhere from two weeks to over a month depending on your documents.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -134,6 +134,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="tega-cay">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -185,6 +187,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

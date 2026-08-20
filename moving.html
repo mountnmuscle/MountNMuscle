@@ -69,7 +69,7 @@
       <h1 class="h1">Moving in Charlotte, NC</h1>
       <p class="lede">Mount N Muscle is labor-and-trailer moving help based in Steele Creek, working 16 cities across the Charlotte metro in North and South Carolina. A two-person crew is <strong>$135 an hour with a two-hour minimum</strong>, and we bring a 5x8 utility trailer, a 6x10 utility trailer or a 16ft enclosed trailer when a job needs one. Call or text 704-237-0164 and describe the job, and you will get a real number instead of a range.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -121,7 +121,7 @@
         <p>Loading zones are the other Charlotte-specific squeeze. In dense South End and Uptown buildings the zone may hold one vehicle for a limited window, may sit on the far side of the building from your unit, or may be a parking deck with a height limit that a box truck cannot clear. A long carry from a distant zone is real billed time, so tell us where the zone actually is when you book and we will plan the trip and the equipment around it.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -138,6 +138,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="moving">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -189,6 +191,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

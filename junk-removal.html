@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal in Charlotte, NC</h1>
       <p class="lede">Mount N Muscle is an owner-operated junk removal outfit based in Steele Creek, working southwest Charlotte and 16 metro cities across NC and SC. Junk removal is flat rate and priced by how much space your load takes in the trailer, so a single item is $115 and a full 16ft enclosed trailer is $700, with everything in between quoted before anything gets loaded. Call or text 704-237-0164 and describe the pile.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -118,7 +118,7 @@
         <p>Payment is due when the load is on the trailer. <strong>Cash, check and Zelle carry no fee; card payments add a 3.5 percent processing fee.</strong> There is a referral program called Friends and Neighbors: send someone over and you get a $25 credit while they get $25 off their first booking, and three booked referrals earns either a $100 credit or a free hour of solo labor.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -135,6 +135,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="junk-removal">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -186,6 +188,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

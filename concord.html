@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal &amp; Home Services in Concord, NC</h1>
       <p class="lede">Mount N Muscle is an owner-operated junk removal, hauling, moving-labor, TV mounting, flooring and handyman outfit based in Steele Creek, southwest Charlotte. Concord sits at the far end of that range, so it is a Zone 4 city with an $89 trip fee added to the job. Everything below is the honest version of what that means for scheduling, pricing and what the City of Concord and Cabarrus County will and will not take off your hands for free.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -116,7 +116,7 @@
         <p>Payment is cash, check, Zelle or card, with a 3.5% processing fee on cards. There is also a referral program called Friends and Neighbors: send someone and you get a $25 credit while they get $25 off their first booking, and three booked referrals earns either a $100 credit or a free hour of solo labor. In a city like Concord, where the trip fee is real, neighbors coordinating jobs on the same street is genuinely the cheapest way to use the service.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -133,6 +133,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="concord">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -184,6 +186,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

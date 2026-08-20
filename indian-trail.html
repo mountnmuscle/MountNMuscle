@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal &amp; Home Services in Indian Trail, NC</h1>
       <p class="lede">Mount N Muscle runs junk removal, hauling, moving labor, TV mounting, flooring and handyman work across Indian Trail, from the older Sun Valley side off Old Monroe Road out to the newer builds along Indian Trail-Fairview Road. We are based in Steele Creek and come out over US-74 or the Monroe Expressway. Indian Trail is a Zone 3 town, so a $49 trip fee applies on top of the job price.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -118,7 +118,7 @@
         <p>Payment is cash, check, Zelle or card. Card payments carry a <strong>3.5%</strong> processing fee. Same-day service is often available and adds $40 when it is. Our Friends &amp; Neighbors referral program gives the referrer a $25 credit and takes $25 off the new customer's first booking; three booked referrals earns either a $100 credit or a free hour of solo labor - which tends to move quickly in a town where whole cul-de-sacs are on the same neighborhood app.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -135,6 +135,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="indian-trail">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -186,6 +188,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

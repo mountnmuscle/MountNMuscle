@@ -69,7 +69,7 @@
       <h1 class="h1">Junk Removal &amp; Home Services in Charlotte, NC</h1>
       <p class="lede">Mount N Muscle is based in Steele Creek and works the whole southwest and south Charlotte side of the county every week, from Berewick and the Palisades out to Ballantyne, SouthPark and uptown. Junk removal, trailer hauling, moving muscle, TV mounting, flooring and handyman work, quoted with real numbers before the truck moves. Call or text 704-237-0164.</p>
       <div class="sub-ctas">
-        <a class="btn btn-gold" href="#quote">Get My Free Quote<span class="arr">&rarr;</span></a>
+        <a class="btn btn-gold" href="#quote-top">Get My Free Quote<span class="arr">&rarr;</span></a>
         <a class="btn btn-ink" href="tel:7042370164">Call or Text Now</a>
       </div>
       <div class="sub-proof">
@@ -115,7 +115,7 @@
         <p>In the older stock closer to center city, expect surprises under the carpet. Original hardwood worth saving, multiple layers of previous flooring, and transitions that were never square are all common in pre-war houses. If your home is inside one of Charlotte's local historic districts, exterior and structural changes go through the Historic District Commission, but interior floor replacement generally does not, which is why flooring is one of the easier upgrades in those neighborhoods.</p>
       </article>
       <aside class="rail">
-        <div class="rail-card">
+        <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
           <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -132,6 +132,8 @@
             </select>
             <label for="r-ms">What needs doing?</label>
             <textarea id="r-ms" name="message" rows="3"></textarea>
+            <label for="r-pc">Promo code (optional)</label>
+            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <input type="hidden" name="page" value="charlotte">
             <button type="submit" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></button>
@@ -183,6 +185,7 @@
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
         <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>
