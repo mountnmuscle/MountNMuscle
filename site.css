@@ -594,3 +594,20 @@ footer{background:#14110C;padding:var(--s6) 0 var(--s4)}
   .sub-proof{gap:var(--s4)}
   .sub-ctas .btn{flex:1 1 100%;justify-content:center}
 }
+
+/* ---- Limited-time promo strip (in-flow; no fixed-nav offset impact) ----
+   Dark ink ground with cream type: bronze-on-bronze fails contrast, same
+   lesson the yard-sign palette landed on. */
+.promo-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--ink);color:var(--cream);padding:12px 18px;margin-bottom:var(--s3);
+  border-left:4px solid var(--bronze);box-shadow:var(--shadow-s)}
+.promo-strip b{font-family:'Fraunces',serif;font-optical-sizing:auto;font-weight:700;
+  font-size:1rem;color:var(--bronze-hi);letter-spacing:.01em;white-space:nowrap}
+.promo-strip span{font-size:.86rem;font-weight:500;line-height:1.5;color:var(--cream)}
+.promo-strip code{font-family:'Inter',system-ui,sans-serif;font-weight:800;letter-spacing:.1em;
+  background:var(--bronze-hi);color:var(--ink);padding:3px 9px;font-size:.79rem;white-space:nowrap}
+@media(max-width:600px){
+  .promo-strip{gap:7px;padding:11px 14px}
+  .promo-strip b{font-size:.92rem}
+  .promo-strip span{font-size:.8rem}
+}
