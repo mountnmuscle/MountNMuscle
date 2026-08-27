@@ -47,7 +47,7 @@
     <li><a href="#area">Areas</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#quote">Quote</a></li>
+    <li><a href="#quote-top">Quote</a></li>
   </ul>
   <a href="tel:7042370164" class="nav-call">704-237-0164</a>
   <button class="burger" id="hbg" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -66,7 +66,7 @@
   <a href="#about">About</a>
   <a href="#referral">Referrals</a>
   <a href="#faq">FAQ</a>
-  <a href="#quote">Free Quote</a>
+  <a href="#quote-top">Free Quote</a>
   <a href="tel:7042370164">Call 704-237-0164</a>
 </div>
 
@@ -81,7 +81,7 @@
     <h1 class="h1">Heavy lifting,<br><span class="gild">handled.</span></h1>
     <p class="hero-sub">Junk removal, moving, TV mounting, flooring and handyman across 16 Charlotte-area cities. Published rates, a free quote every time, and the price confirmed before we start.</p>
     <div class="hero-ctas">
-      <a href="#quote" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></a>
+      <a href="#quote-top" class="btn btn-gold">Get My Free Quote<span class="arr">&rarr;</span></a>
       <a href="tel:7042370164" class="btn btn-ink">Call or Text Now</a>
     </div>
     <div class="hero-proof">
@@ -91,7 +91,7 @@
     </div>
   </div>
   <div class="hero-r">
-    <div class="qcard">
+    <div class="qcard" id="quote-top">
       <h2>Free quote</h2>
       <p>Same-day response. No waiting, no runaround.</p>
       <form action="https://formspree.io/f/mjgzpyga" method="POST">
@@ -103,6 +103,7 @@
         <div class="f"><label for="q-sv">Service</label><select id="q-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option><option value="Other">Other &mdash; I&rsquo;ll describe it</option></select></div>
         <div class="f f-other" id="q-other-wrap" hidden><label for="q-other">Tell us what you need</label><input id="q-other" type="text" name="other_service" placeholder="e.g. playground assembly, shed teardown&hellip;"></div>
         <div class="f"><label for="q-ms">What needs done?</label><textarea id="q-ms" name="message" rows="2" placeholder="Quick description&hellip;"></textarea></div>
+        <div class="f"><label for="q-pc">Promo code (optional)</label><input id="q-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Quote</button>
       </form>

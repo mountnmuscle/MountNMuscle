@@ -19,6 +19,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Fixed nav overlays the top of any anchor target; offset the landing point. */
+[id]{scroll-margin-top:84px}
 body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 .wrap{max-width:1140px;margin:0 auto;padding:0 var(--s3)}
@@ -580,6 +582,13 @@ footer{background:#14110C;padding:var(--s6) 0 var(--s4)}
 @media(max-width:960px){
   .sub-grid{grid-template-columns:1fr;gap:var(--s5)}
   .rail{position:static;flex-direction:column}
+  /* Single column stacks the rail below the whole article, burying the quote
+     form ~2/3 down the page. Promote just the quote card above the article. */
+  .rail{display:contents}
+  .sub-art{order:2}
+  .rail-card{order:3;margin-bottom:var(--s3)}
+  .rail-card:last-child{margin-bottom:0}
+  #quote-top{order:1;margin-bottom:0}
   .sub-body{padding:var(--s6) 0}
   .sub-hero{padding:calc(61px + var(--s5)) 0 var(--s5)}
   .sub-proof{gap:var(--s4)}
