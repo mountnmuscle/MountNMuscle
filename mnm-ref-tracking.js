@@ -36,6 +36,32 @@
     matheson: 'MATHESON10'
   };
 
+  /* ------------------------------------------------------------------
+   * Site-wide promotion.
+   *
+   * While this is running it OVERRIDES every per-property code above,
+   * because promos don't stack and one promo per booking is the rule —
+   * so everyone should get the better of the two. LABORDAY is 15% off;
+   * MATHESON10 is 10%. Handing a Matheson resident the 10% code while
+   * the page advertises 15% is the wrong way round.
+   *
+   * SELF-EXPIRING. At PROMO_ENDS this reverts to PROMO_BY_REF on its
+   * own — no code change needed. To run a future promo, set the code
+   * and the end date; to end one early, set PROMO_CODE to ''.
+   *
+   * Ends at the close of Sept 7, 2026 (month is 0-indexed: 8 = Sept).
+   * ------------------------------------------------------------------ */
+  var PROMO_CODE = 'LABORDAY';
+  var PROMO_ENDS = new Date(2026, 8, 8, 0, 0, 0);
+
+  function sitewidePromo() {
+    try {
+      return (PROMO_CODE && new Date() < PROMO_ENDS) ? PROMO_CODE : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
   function readSource() {
     var params;
     try {
@@ -93,9 +119,14 @@
         subject.value = subject.value + ' [' + source + ']';
       }
 
-      // Prefill the promo code when this source has one — but never overwrite
-      // something the visitor already typed.
-      var promo = PROMO_BY_REF[source];
+      // Prefill the promo code — but never overwrite something the visitor
+      // already typed. A live site-wide promo wins over a per-property code.
+      // hasOwnProperty guard: a bare lookup on a ref like "constructor"
+      // would return an inherited Object.prototype member, not a code.
+      var refPromo = Object.prototype.hasOwnProperty.call(PROMO_BY_REF, source)
+        ? PROMO_BY_REF[source]
+        : '';
+      var promo = sitewidePromo() || refPromo;
       var promoField = form.querySelector('input[name="promo_code"]');
       if (promo && promoField && !promoField.value) {
         promoField.value = promo;
