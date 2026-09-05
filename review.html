@@ -1,31 +1,58 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Leave a Review | Mount N Muscle</title>
+<title>How Did We Do? | Mount N Muscle</title>
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://search.google.com/local/writereview?placeid=ChIJgRo4_MQfVIgRZNFDv-ZQRog">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap">
 <style>
-:root{--cream:#FAF6EE;--ink:#1A1712;--ink-3:#6E6455;--bronze-deep:#7A5C1E;--bronze:#B08B3F;--bronze-hi:#E8CC8A}
+:root{--cream:#FAF6EE;--paper:#FFF;--hairline:#E6DEC9;--ink:#1A1712;--ink-2:#4A4338;--ink-3:#6E6455;
+ --bronze-deep:#7A5C1E;--bronze:#B08B3F;--bronze-hi:#E8CC8A;
+ --sh:0 1px 2px rgba(58,42,10,.06),0 4px 12px rgba(58,42,10,.07)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);
- min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
-.w{max-width:26rem}
-.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;margin-bottom:20px;letter-spacing:-.01em}
+ min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 20px}
+.w{max-width:44rem;width:100%;text-align:center}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.4rem;margin-bottom:26px;letter-spacing:-.01em}
 .logo span{color:var(--bronze-deep)}
-h1{font-family:'Fraunces',serif;font-weight:700;font-size:1.6rem;line-height:1.15;margin-bottom:10px}
-p{color:var(--ink-3);font-size:.95rem;line-height:1.6;margin-bottom:22px}
-a.btn{display:inline-block;background:linear-gradient(135deg,var(--bronze),var(--bronze-hi) 52%,var(--bronze));
- color:var(--ink);font-weight:700;text-decoration:none;padding:15px 30px;font-size:1rem}
-a.alt{display:block;margin-top:18px;color:var(--ink-3);font-size:.85rem}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.75rem,5vw,2.4rem);line-height:1.1;margin-bottom:12px}
+.sub{color:var(--ink-2);font-size:1rem;line-height:1.6;margin-bottom:30px;max-width:32em;margin-left:auto;margin-right:auto}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left}
+@media(max-width:600px){.opts{grid-template-columns:1fr}}
+.opt{background:var(--paper);border:1px solid var(--hairline);box-shadow:var(--sh);
+ padding:24px 22px;display:flex;flex-direction:column}
+.opt h2{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;margin-bottom:8px;line-height:1.2}
+.opt p{color:var(--ink-3);font-size:.9rem;line-height:1.55;margin-bottom:20px;flex:1}
+.opt .go,.opt .tell{margin-top:auto}
+.opt a,.opt .alt2{display:block;text-align:center;font-weight:700;font-size:.97rem;padding:14px 18px;text-decoration:none}
+.go{background:linear-gradient(135deg,var(--bronze),var(--bronze-hi) 52%,var(--bronze));color:var(--ink)}
+.tell{background:var(--ink);color:var(--cream)}
+.alt2{display:block;margin-top:10px;text-align:center;font-size:.84rem;color:var(--ink-3);text-decoration:none}
+.alt2:hover{color:var(--bronze-deep)}
+.foot{margin-top:26px;font-size:.85rem;color:var(--ink-3);line-height:1.6}
+.foot a{color:var(--ink-3)}
 </style>
 <div class="w">
   <div class="logo">Mount <span>N</span> Muscle</div>
-  <h1>Thanks for working with&nbsp;us</h1>
-  <p>This opens the Google review box. Honest feedback either way &mdash; it genuinely helps a small local crew.</p>
-  <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJgRo4_MQfVIgRZNFDv-ZQRog">Leave a Google review</a>
-  <a class="alt" href="/">mountnmuscle.com</a>
+  <h1>How did the job go?</h1>
+  <p class="sub">Both of these come straight to us. Take whichever one fits &mdash; or do both.</p>
+
+  <div class="opts">
+    <div class="opt">
+      <h2>Post a Google review</h2>
+      <p>Public, and it&rsquo;s the single biggest help you can give a small local crew. Honest either way &mdash; we&rsquo;d rather have the real thing.</p>
+      <a class="go" href="https://search.google.com/local/writereview?placeid=ChIJgRo4_MQfVIgRZNFDv-ZQRog">Leave a Google review</a>
+      <span class="alt2">takes about 30 seconds</span>
+    </div>
+    <div class="opt">
+      <h2>Tell us directly</h2>
+      <p>If something wasn&rsquo;t right, we want to hear it from you and make it right. Goes to Brenden&rsquo;s phone, not a ticket queue.</p>
+      <a class="tell" href="sms:+17042370164?&amp;body=Hi%20Mount%20N%20Muscle%20%E2%80%94%20about%20my%20recent%20job%3A%20">Text 704-237-0164</a>
+      <a class="alt2" href="tel:+17042370164">or tap to call</a>
+    </div>
+  </div>
+
+  <p class="foot">Either option is yours to pick &mdash; we don&rsquo;t screen who gets asked.<br>
+  <a href="/">mountnmuscle.com</a></p>
 </div>
-<script>addEventListener('load',function(){location.replace('https://search.google.com/local/writereview?placeid=ChIJgRo4_MQfVIgRZNFDv-ZQRog');});</script>
