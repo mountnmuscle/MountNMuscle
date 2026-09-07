@@ -121,6 +121,17 @@
         form.appendChild(field);
       }
 
+      // Which page the form was submitted from. Stamped here from the real
+      // URL rather than a hand-typed hidden field, so it can never drift from
+      // the file it sits in - the old hidden fields had done exactly that.
+      if (!form.querySelector('input[name="page"]')) {
+        var page = document.createElement('input');
+        page.type = 'hidden';
+        page.name = 'page';
+        page.value = ((window.location.pathname || '/').replace(/^\/|\.html$/g, '') || 'home').replace(/^index$/, 'home');
+        form.appendChild(page);
+      }
+
       // Append the source to the Formspree subject so it's visible without
       // opening the message.
       var subject = form.querySelector('input[name="_subject"]');
