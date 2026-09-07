@@ -617,3 +617,9 @@ footer{background:#14110C;padding:var(--s6) 0 var(--s4)}
 .gr-acts{display:flex;gap:var(--s2);flex-wrap:wrap;align-items:center}
 .gr-short{margin-top:var(--s2);font-size:.84rem;color:var(--ink-3)}
 .gr-short strong{color:var(--bronze-deep);font-weight:700;white-space:nowrap}
+
+/* Footer link + wordmark colour — these were falling back to browser defaults */
+.fbot a{color:rgba(250,246,238,.5);text-decoration:none}
+.fbot a:hover{color:var(--bronze-hi)}
+.fbrand p.flogo{color:var(--bronze-hi)}
+.fhours{color:rgba(250,246,238,.5);line-height:1.7;margin-top:4px}
