@@ -49,9 +49,18 @@
    * own — no code change needed. To run a future promo, set the code
    * and the end date; to end one early, set PROMO_CODE to ''.
    *
-   * Ends at the close of Sept 7, 2026 (month is 0-indexed: 8 = Sept).
+   * LABORDAY ran through Sept 7, 2026 and is now over. The hero strip that
+   * advertised it was removed from all 23 pages in the same deploy, so the
+   * prefill is switched off here to match - a code prefilled into the quote
+   * form that the site no longer advertises is a discount given away for
+   * nothing. With PROMO_CODE empty, matheson scans correctly get MATHESON10.
+   *
+   * To run the next promo: set PROMO_CODE, set PROMO_ENDS to midnight on the
+   * morning AFTER the last valid day (month is 0-indexed: 8 = Sept), and add
+   * the <div class="promo-strip"> block back to the hero. The .promo-strip
+   * styles are still in site.css, ready to use.
    * ------------------------------------------------------------------ */
-  var PROMO_CODE = 'LABORDAY';
+  var PROMO_CODE = '';
   var PROMO_ENDS = new Date(2026, 8, 8, 0, 0, 0);
 
   function sitewidePromo() {
