@@ -547,6 +547,7 @@ footer{background:#14110C;padding:var(--s6) 0 var(--s4)}
 .sub-art figure img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 30%}
 .sub-art h2{font-family:'Fraunces',serif;font-optical-sizing:auto;font-weight:700;font-size:clamp(1.4rem,2vw,1.85rem);line-height:1.15;letter-spacing:-.01em;color:var(--ink);margin:var(--s6) 0 var(--s2);padding-top:var(--s4);border-top:1px solid var(--hairline)}
 .sub-art h2:first-of-type{margin-top:0;padding-top:0;border-top:none}
+.sub-art h3{font-family:'Fraunces',serif;font-optical-sizing:auto;font-weight:600;font-size:clamp(1.05rem,1.3vw,1.2rem);line-height:1.25;letter-spacing:.01em;text-transform:uppercase;color:var(--bronze-deep);margin:var(--s4) 0 var(--s2)}
 .sub-art p{color:var(--ink-2);margin-bottom:var(--s3)}
 .sub-art p strong{color:var(--ink);font-weight:600}
 .sub-art ul{list-style:none;margin:0 0 var(--s3)}
