@@ -80,7 +80,7 @@
       </div>
       <div class="sub-proof">
         <div><b>5.0</b><span>Google rating</span></div>
-        <div><b>60+</b><span>Google reviews</span></div>
+        <div><b>100+</b><span>Google reviews</span></div>
         <div><b>16</b><span>Cities served</span></div>
         <div><b>$95</b><span>Starting price</span></div>
       </div>
@@ -103,7 +103,7 @@
         <p>Mount N Muscle is <strong>labor and trailer help, not a full-service van line</strong>. The work that fits best is loading or unloading a rental truck or a PODS-style container, moving furniture around inside a house, apartment and single-room moves, one heavy item, and runs to or from a storage unit. Those are jobs where two people, dollies, straps and a trailer solve the problem.</p>
         <p>A full interstate household move is not what this is. We do not run long-distance transport of household goods, we do not do binding estimates on a whole-house tonnage basis, and we do not broker a semi to another state. If you are moving from Charlotte to Denver, hire a van line or a container company for the transport and hire us for the part they charge the most for, which is the loading.</p>
         <p>Packing is not a separate flat-rate service either. If you want the crew boxing up a kitchen or wrapping a dresser, that is billed as labor at the same hourly rate as everything else, and it is usually cheaper for you to pack the small stuff yourself in the days before and save the crew for what actually needs two backs.</p>
-        <p>Google reviews for the company sit at 5.0 across 60+ reviews. Read them before you book, and read the ones that describe a job like yours.</p>
+        <p>Google reviews for the company sit at 5.0 across 100+ reviews. Read them before you book, and read the ones that describe a job like yours.</p>
         <h2>How many hours will my move take?</h2>
         <p>For loading a rental truck or container with a two-person crew, a studio or one-bedroom apartment usually runs <strong>two to three hours</strong>, a two-bedroom runs <strong>three to five hours</strong>, and a three-bedroom house often runs <strong>five to eight hours or more</strong>. Unloading is typically faster than loading, often 60 to 75 percent of the load time, because nothing has to be stacked and locked in place.</p>
         <p>Those are honest middle-of-the-road numbers, not promises. The single biggest variable is whether the household is actually packed. A one-bedroom that is fully boxed, taped and stacked by the door can load in under two hours. The same one-bedroom with loose clothes in laundry baskets, open kitchen cabinets and a closet nobody touched can take four.</p>
@@ -134,7 +134,8 @@
             <label for="r-nm">Name</label>
             <input id="r-nm" type="text" name="first_name" autocomplete="given-name" required>
             <label for="r-ph">Phone</label>
-            <input id="r-ph" type="tel" name="phone" autocomplete="tel" required>
+            <input id="r-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required>
+            <p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
             <label for="r-sv">Service needed</label>
             <select id="r-sv" name="service" required>
               <option value="" disabled selected>Select a service</option>
@@ -150,7 +151,6 @@
             <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <button type="submit" class="btn btn-gold">Get My Free Estimate<span class="arr">&rarr;</span></button>
-            <p class="fine consent">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
             <p class="fine">Or call or text <a href="tel:+17042370164">704-237-0164</a></p>
           </form>
         </div>
@@ -195,7 +195,7 @@
           <div class="f"><label for="b-ln">Last name</label><input id="b-ln" type="text" name="last_name" autocomplete="family-name"></div>
         </div>
         <div class="f2">
-          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" name="phone" autocomplete="tel" required></div>
+          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required><p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p></div>
           <div class="f"><label for="b-em">Email</label><input id="b-em" type="email" name="email" autocomplete="email"></div>
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
@@ -205,7 +205,6 @@
             <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Estimate</button>
-            <p class="fine consent">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
       </form>
       <p class="q-alt">Or call or text directly &mdash; <a href="tel:+17042370164">704-237-0164</a></p>
     </div>
@@ -229,7 +228,7 @@
       </div>
       <div class="fcol"><h4>Services</h4><ul><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li></ul></div>
       <div class="fcol"><h4>Areas</h4><ul><li><a href="charlotte.html">Charlotte, NC</a></li><li><a href="huntersville.html">Huntersville, NC</a></li><li><a href="fort-mill.html">Fort Mill, SC</a></li><li><a href="rock-hill.html">Rock Hill, SC</a></li><li><a href="gastonia.html">Gastonia, NC</a></li><li><a href="matthews.html">Matthews, NC</a></li><li><a href="concord.html">Concord, NC</a></li><li><a href="mooresville.html">Mooresville, NC</a></li></ul></div>
-      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+17042370164">704-237-0164</a></li><li><a href="mailto:info@mountnmuscle.com">info@mountnmuscle.com</a></li><li class="fhours">Mon&ndash;Sat 7am&ndash;8pm<br>Sun 8am&ndash;8pm</li><li><a href="review.html">Leave a Review</a></li><li><a href="index.html#quote">Free Quote</a></li><li><a href="index.html#vip">VIP List</a></li><li><a href="index.html#referral">Referral Credits</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener">Our Google Reviews</a></li><li><a href="https://www.yelp.com/biz/mount-n-muscle-charlotte" target="_blank" rel="noopener">Find Us on Yelp</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Service Terms</a></li></ul></div>
+      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+17042370164">704-237-0164</a></li><li><a href="mailto:info@mountnmuscle.com">info@mountnmuscle.com</a></li><li class="fhours">Mon&ndash;Sat 7am&ndash;8pm<br>Sun 8am&ndash;8pm</li><li><a href="review.html">Leave a Review</a></li><li><a href="index.html#quote">Free Quote</a></li><li><a href="index.html#vip">VIP List</a></li><li><a href="index.html#referral">Referral Credits</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="es.html" hreflang="es" lang="es">En español</a></li><li><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener">Our Google Reviews</a></li><li><a href="https://www.yelp.com/biz/mount-n-muscle-charlotte" target="_blank" rel="noopener">Find Us on Yelp</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Service Terms</a></li></ul></div>
     </div>
     <div class="fbot">
       <p>&copy; 2026 Mount N Muscle &middot; Charlotte, NC 28278 &middot; 704-237-0164 &middot; Serving the Charlotte Metro</p>

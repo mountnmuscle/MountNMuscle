@@ -80,7 +80,7 @@
       </div>
       <div class="sub-proof">
         <div><b>5.0</b><span>Google rating</span></div>
-        <div><b>60+</b><span>Google reviews</span></div>
+        <div><b>100+</b><span>Google reviews</span></div>
         <div><b>16</b><span>Cities served</span></div>
         <div><b>$105</b><span>Starting price</span></div>
       </div>
@@ -120,7 +120,7 @@
         <h2>Do you work with storage facility managers directly?</h2>
         <p>Yes, and there is a free facility account for it with <strong>no minimum and no contract</strong>. The part managers care about is standing authorization: <strong>any single unit up to $500 gets cleared on a text</strong>, with no separate approval, no purchase order and no waiting on a district manager.</p>
         <p>The account also carries 10 percent off the card rates above from the first unit, held capacity during auction weeks, and one monthly invoice on Net 15 terms instead of a payment per unit. Photos, a broom sweep, a refrigerant statement and document shredding are included rather than line-itemed, which removes the four things that usually generate a follow-up email.</p>
-        <p>Volume is applied automatically on the monthly invoice, so there is nothing to negotiate: <strong>one to three units in a month takes 10 percent off, four to seven takes 15 percent, and eight or more takes 20 percent.</strong> Mount N Muscle is owner-operated out of Steele Creek and holds a 5.0 rating across 60+ Google reviews. To open an account, text 704-237-0164 with the facility name.</p>
+        <p>Volume is applied automatically on the monthly invoice, so there is nothing to negotiate: <strong>one to three units in a month takes 10 percent off, four to seven takes 15 percent, and eight or more takes 20 percent.</strong> Mount N Muscle is owner-operated out of Steele Creek and holds a 5.0 rating across 100+ Google reviews. To open an account, text 704-237-0164 with the facility name.</p>
         <ul><li>No minimum, no contract, free to open</li><li>Standing authorization on any single unit up to $500 &mdash; cleared on a text</li><li>10 percent off card rates from the first unit</li><li>Auction-week capacity held</li><li>One monthly invoice, Net 15</li><li>Photos, broom sweep, refrigerant statement and document shredding included</li><li>Automatic monthly volume tiers: 1&ndash;3 units 10 percent, 4&ndash;7 units 15 percent, 8+ units 20 percent</li></ul>
         <h2>How do I get a price without meeting anyone?</h2>
         <p>Text the unit size and one photo taken from the doorway to 704-237-0164. <strong>A tier and a firm price come back in writing, usually within the hour</strong>, and that written number is what gets invoiced. No estimator appointment and no range that firms up later. It is an estimate until we are standing at the unit, and it becomes the quote the moment we confirm it there.</p>
@@ -135,7 +135,8 @@
             <label for="r-nm">Name</label>
             <input id="r-nm" type="text" name="first_name" autocomplete="given-name" required>
             <label for="r-ph">Phone</label>
-            <input id="r-ph" type="tel" name="phone" autocomplete="tel" required>
+            <input id="r-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required>
+            <p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
             <label for="r-sv">Service needed</label>
             <select id="r-sv" name="service" required>
               <option value="" disabled selected>Select a service</option>
@@ -151,7 +152,6 @@
             <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
             <button type="submit" class="btn btn-gold">Get My Free Estimate<span class="arr">&rarr;</span></button>
-            <p class="fine consent">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
             <p class="fine">Or call or text <a href="tel:+17042370164">704-237-0164</a></p>
           </form>
         </div>
@@ -196,7 +196,7 @@
           <div class="f"><label for="b-ln">Last name</label><input id="b-ln" type="text" name="last_name" autocomplete="family-name"></div>
         </div>
         <div class="f2">
-          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" name="phone" autocomplete="tel" required></div>
+          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required><p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p></div>
           <div class="f"><label for="b-em">Email</label><input id="b-em" type="email" name="email" autocomplete="email"></div>
         </div>
         <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
@@ -206,7 +206,6 @@
             <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
             <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
         <button type="submit" class="fsub">Get My Free Estimate</button>
-            <p class="fine consent">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
       </form>
       <p class="q-alt">Or call or text directly &mdash; <a href="tel:+17042370164">704-237-0164</a></p>
     </div>
@@ -230,7 +229,7 @@
       </div>
       <div class="fcol"><h4>Services</h4><ul><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li></ul></div>
       <div class="fcol"><h4>Areas</h4><ul><li><a href="charlotte.html">Charlotte, NC</a></li><li><a href="huntersville.html">Huntersville, NC</a></li><li><a href="fort-mill.html">Fort Mill, SC</a></li><li><a href="rock-hill.html">Rock Hill, SC</a></li><li><a href="gastonia.html">Gastonia, NC</a></li><li><a href="matthews.html">Matthews, NC</a></li><li><a href="concord.html">Concord, NC</a></li><li><a href="mooresville.html">Mooresville, NC</a></li></ul></div>
-      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+17042370164">704-237-0164</a></li><li><a href="mailto:info@mountnmuscle.com">info@mountnmuscle.com</a></li><li class="fhours">Mon&ndash;Sat 7am&ndash;8pm<br>Sun 8am&ndash;8pm</li><li><a href="review.html">Leave a Review</a></li><li><a href="index.html#quote">Free Quote</a></li><li><a href="index.html#vip">VIP List</a></li><li><a href="index.html#referral">Referral Credits</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener">Our Google Reviews</a></li><li><a href="https://www.yelp.com/biz/mount-n-muscle-charlotte" target="_blank" rel="noopener">Find Us on Yelp</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Service Terms</a></li></ul></div>
+      <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+17042370164">704-237-0164</a></li><li><a href="mailto:info@mountnmuscle.com">info@mountnmuscle.com</a></li><li class="fhours">Mon&ndash;Sat 7am&ndash;8pm<br>Sun 8am&ndash;8pm</li><li><a href="review.html">Leave a Review</a></li><li><a href="index.html#quote">Free Quote</a></li><li><a href="index.html#vip">VIP List</a></li><li><a href="index.html#referral">Referral Credits</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="es.html" hreflang="es" lang="es">En español</a></li><li><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener">Our Google Reviews</a></li><li><a href="https://www.yelp.com/biz/mount-n-muscle-charlotte" target="_blank" rel="noopener">Find Us on Yelp</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Service Terms</a></li></ul></div>
     </div>
     <div class="fbot">
       <p>&copy; 2026 Mount N Muscle &middot; Charlotte, NC 28278 &middot; 704-237-0164 &middot; Serving the Charlotte Metro</p>
