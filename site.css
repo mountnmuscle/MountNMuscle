@@ -4,3 +4,7 @@ h1 em,h2 em,h3 em,h4 em,.h1 em,.h2 em,.logo em{font-style:normal}
 .nav-links .lang-li a{color:var(--bronze-deep);border:1.5px solid var(--bronze);padding:6px 12px;letter-spacing:.06em}.nav-links .lang-li a:hover{background:var(--bronze-hi);color:var(--ink)}.lang-m{display:none}
 @media(max-width:960px){.lang-m{display:inline-flex;align-items:center;margin-left:auto;margin-right:14px;font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--bronze-deep);text-decoration:none;border:1.5px solid var(--bronze);padding:7px 12px;line-height:1}}
 .h1,h1,.h2,h2,.fr-title{text-transform:uppercase;letter-spacing:.005em;line-height:.95}.h1{font-size:clamp(3.2rem,5.4vw,6.2rem)}
+
+.skip-link{position:absolute;left:8px;top:-60px;z-index:1000;background:var(--ink);color:var(--cream);padding:10px 16px;font-weight:600;text-decoration:none;border-radius:4px}.skip-link:focus{top:8px}
+.upd{font-size:.8rem;letter-spacing:.04em;color:var(--bronze-dark,#7A5F26);margin:.25rem 0 1rem}
+[id="main"]:focus{outline:none}

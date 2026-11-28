@@ -154,8 +154,86 @@
     });
   }
 
+
+  /* ------------------------------------------------------------------
+   * Campaign attribution (added Nov 27 2026).
+   *
+   * Captures the full UTM set plus ad click IDs (Google gclid/gbraid/wbraid,
+   * Meta fbclid, Microsoft msclkid), the page the visitor landed on and the
+   * site that sent them. Kept for 30 days in localStorage, so a visitor who
+   * clicks an ad today and comes back next week to fill the form is still
+   * credited. A new visit that carries campaign tags replaces the old ones.
+   * Only fields that have a value are added to the form, so organic leads
+   * don't arrive with a pile of empty lines.
+   * ------------------------------------------------------------------ */
+  var ATTR_KEY = 'mnm_attr';
+  var ATTR_DAYS = 30;
+  var ATTR_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+    'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid'];
+
+  function cleanValue(v) {
+    return String(v || '').replace(/[\u0000-\u001f<>]/g, '').slice(0, 150);
+  }
+
+  function externalReferrer() {
+    try {
+      if (!document.referrer) return '';
+      var host = new URL(document.referrer).hostname.replace(/^www\./, '');
+      return host && host !== window.location.hostname.replace(/^www\./, '') ? host : '';
+    } catch (e) { return ''; }
+  }
+
+  function resolveAttribution() {
+    var now = Date.now(), fresh = {}, has = false, params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { params = null; }
+    if (params) {
+      ATTR_PARAMS.forEach(function (k) {
+        var v = cleanValue(params.get(k));
+        if (v) { fresh[k] = v; has = true; }
+      });
+    }
+    var ref = externalReferrer();
+    var stored = null;
+    try { stored = JSON.parse(localStorage.getItem(ATTR_KEY) || 'null'); } catch (e) { stored = null; }
+    if (stored && (!stored.ts || now - stored.ts > ATTR_DAYS * 864e5)) stored = null;
+
+    // A campaign click always wins; otherwise keep the first touch we have.
+    if (!has && stored && !(ref && !stored.referrer && !stored.utm_source)) return stored;
+    fresh.landing_page = cleanValue(window.location.pathname || '/');
+    if (ref) fresh.referrer = ref;
+    fresh.ts = now;
+    try { localStorage.setItem(ATTR_KEY, JSON.stringify(fresh)); } catch (e) {}
+    return fresh;
+  }
+
+  function addHidden(form, name, value) {
+    if (!value || form.querySelector('input[name="' + name + '"]')) return;
+    var el = document.createElement('input');
+    el.type = 'hidden'; el.name = name; el.value = value;
+    form.appendChild(el);
+  }
+
+  function stampAttribution(attr) {
+    var forms = document.querySelectorAll('form[action*="formspree.io"]');
+    Array.prototype.forEach.call(forms, function (form) {
+      ATTR_PARAMS.concat(['landing_page', 'referrer']).forEach(function (k) {
+        addHidden(form, k, attr[k]);
+      });
+    });
+  }
+
   function init() {
-    stampForms(resolveSource());
+    var attr = {};
+    try { attr = resolveAttribution() || {}; } catch (e) { attr = {}; }
+    var source = resolveSource();
+    // No ?ref= or utm_source: fall back to the site that sent them
+    // (google, bing, facebook...) instead of calling it "direct".
+    if (source === DEFAULT_SOURCE && attr.referrer) {
+      source = sanitize(attr.referrer.replace(/\.(com|org|net|co)(\.[a-z]{2})?$/, '').split('.').pop());
+      if (!source) source = DEFAULT_SOURCE;
+    }
+    stampForms(source);
+    try { stampAttribution(attr); } catch (e) {}
   }
 
   if (document.readyState === 'loading') {
