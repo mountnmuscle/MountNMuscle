@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SR09EGY1LG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SR09EGY1LG');</script>
 <title>Hauling &amp; Delivery Service Charlotte NC | Mount N Muscle</title>
 <meta name="description" content="Hauling and delivery across Charlotte NC. Solo with a utility trailer is $105/hr, two-person crew $135/hr, plus travel. Call Mount N Muscle 704-237-0164.">
 <meta name="keywords" content="hauling Charlotte NC, furniture delivery Charlotte NC, appliance delivery Charlotte, Facebook Marketplace pickup Charlotte, mulch delivery Charlotte NC, dump run Charlotte, trailer hauling service Charlotte, storage unit transfer Charlotte">
@@ -56,6 +59,9 @@
 <div class="mobile-menu" id="mob-nav">
   <a href="index.html#services">Services</a>
   <a href="junk-removal.html">Junk Removal</a>
+  <a href="mattress-removal.html">Mattress Removal</a>
+  <a href="appliance-removal.html">Appliance Removal</a>
+  <a href="hot-tub-removal.html">Hot Tub Removal</a>
   <a href="garage-cleanout.html">Garage Cleanout</a>
   <a href="storage-unit-cleanout.html">Storage Unit Cleanout</a>
   <a href="moving.html">Moving</a>
@@ -65,6 +71,7 @@
   <a href="handyman.html">Handyman</a>
   <a href="index.html#pricing">Pricing</a>
   <a href="index.html#area">Areas</a>
+  <a href="steele-creek.html">Steele Creek</a>
   <a href="index.html#faq">FAQ</a>
   <a href="#quote-top">Free Quote</a>
   <a href="tel:+17042370164">Call 704-237-0164</a>
@@ -91,6 +98,7 @@
         <div><b>16</b><span>Cities served</span></div>
         <div><b>$95</b><span>Starting price</span></div>
       </div>
+      <p class="trust"><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener" aria-label="Rated 5.0 on Google from 100+ reviews">★★★★★ 5.0 on Google · 100+ reviews</a></p>
     </div>
   </div>
 </section>
@@ -135,33 +143,35 @@
         <div class="rail-card" id="quote-top">
           <h3>Get a free quote</h3>
           <p>Same-day response. The price is confirmed before any work starts.</p>
-          <form class="rail-form" action="https://formspree.io/f/mjgzpyga" method="POST">
-            <label for="r-nm">Name</label>
-            <input id="r-nm" type="text" name="first_name" autocomplete="given-name" required>
-            <label for="r-ph">Phone</label>
-            <input id="r-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required>
-            <p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
-            <label for="r-sv">Service needed</label>
-            <select id="r-sv" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option>
-              <option>TV Mounting</option><option>Flooring</option><option>Handyman</option>
-              <option>Multiple Services</option>
-            </select>
-            <label for="r-ms">What needs doing?</label>
-            <textarea id="r-ms" name="message" rows="3"></textarea>
-            <label for="r-pc">Promo code (optional)</label>
-            <input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-            <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
-            <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
-            <button type="submit" class="btn btn-gold">Get My Free Estimate<span class="arr">&rarr;</span></button>
-            <p class="fine">Or call or text <a href="tel:+17042370164">704-237-0164</a></p>
-          </form>
+          <form class="qform" action="https://formspree.io/f/mjgzpyga" method="POST">
+        <div class="f2 f2-keep">
+          <div class="f"><label for="r-fn">First name</label><input id="r-fn" type="text" name="first_name" autocomplete="given-name" required></div>
+          <div class="f"><label for="r-ln">Last name</label><input id="r-ln" type="text" name="last_name" autocomplete="family-name"></div>
+        </div>
+        <div class="f2">
+          <div class="f"><label for="r-ph">Phone</label><input id="r-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" placeholder="704-000-0000" required></div>
+          <div class="f"><label for="r-em">Email</label><input id="r-em" type="email" name="email" autocomplete="email"></div>
+        </div>
+        <label class="f-check" for="r-sms"><input id="r-sms" type="checkbox" name="sms_consent" value="yes" required><span>Text me about my quote. Msg &amp; data rates may apply. Reply STOP to opt out.</span></label>
+        <div class="f"><label for="r-sv">Service</label><select id="r-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option><option value="Other">Other &mdash; I&rsquo;ll describe it</option></select></div>
+        <div class="f f-other" id="r-other-wrap" hidden><label for="r-other">Tell us what you need</label><input id="r-other" type="text" name="other_service" placeholder="e.g. playground assembly, shed teardown&hellip;"></div>
+        <div class="f2 f2-keep">
+          <div class="f"><label for="r-dy">Preferred day</label><input id="r-dy" type="date" name="preferred_day"></div>
+          <div class="f"><label for="r-tm">Preferred time</label><select id="r-tm" name="preferred_time"><option value="" selected>Any time</option><option value="Morning (8am-12pm)">Morning (8am&ndash;12pm)</option><option value="Afternoon (12pm-5pm)">Afternoon (12pm&ndash;5pm)</option><option value="Evening (5pm-8pm)">Evening (5pm&ndash;8pm)</option><option value="Flexible">Flexible</option></select></div>
+        </div>
+        <div class="f"><label for="r-ms">What needs done?</label><textarea id="r-ms" name="message" rows="2" placeholder="Quick description&hellip;"></textarea></div>
+        <div class="f"><label for="r-pc">Promo code (optional)</label><input id="r-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
+        <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
+        <p class="trust trust-form"><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener" aria-label="Rated 5.0 on Google from 100+ reviews">★★★★★ 5.0 on Google · 100+ reviews</a></p>
+        <button type="submit" class="fsub">Get My Free Quote</button>
+      </form>
+          <p class="fine">Or call or text <a href="tel:+17042370164">704-237-0164</a></p>
         </div>
         <div class="rail-card">
           <h3>Services</h3>
-          <ul class="rail-links"><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html" aria-current="page">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li></ul>
+          <ul class="rail-links"><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html" aria-current="page">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li><li><a href="mattress-removal.html">Mattress Removal</a></li><li><a href="appliance-removal.html">Appliance Removal</a></li><li><a href="hot-tub-removal.html">Hot Tub Removal</a></li></ul>
         </div>
         <div class="rail-card">
           <h3>Google reviews</h3>
@@ -171,7 +181,7 @@
         </div>
         <div class="rail-card">
           <h3>Service areas</h3>
-          <p class="rail-areas"><a href="charlotte.html">Charlotte</a>, <a href="huntersville.html">Huntersville</a>, <a href="concord.html">Concord</a>, <a href="mooresville.html">Mooresville</a>, <a href="matthews.html">Matthews</a>, <a href="pineville.html">Pineville</a>, <a href="ballantyne.html">Ballantyne</a>, <a href="mount-holly.html">Mount Holly</a>, <a href="gastonia.html">Gastonia</a>, <a href="waxhaw.html">Waxhaw</a>, <a href="stallings.html">Stallings</a>, <a href="indian-trail.html">Indian Trail</a>, <a href="fort-mill.html">Fort Mill</a>, <a href="tega-cay.html">Tega Cay</a>, <a href="lake-wylie.html">Lake Wylie</a>, <a href="rock-hill.html">Rock Hill</a></p>
+          <p class="rail-areas"><a href="charlotte.html">Charlotte</a>, <a href="steele-creek.html">Steele Creek</a>, <a href="huntersville.html">Huntersville</a>, <a href="concord.html">Concord</a>, <a href="mooresville.html">Mooresville</a>, <a href="matthews.html">Matthews</a>, <a href="pineville.html">Pineville</a>, <a href="ballantyne.html">Ballantyne</a>, <a href="mount-holly.html">Mount Holly</a>, <a href="gastonia.html">Gastonia</a>, <a href="waxhaw.html">Waxhaw</a>, <a href="stallings.html">Stallings</a>, <a href="indian-trail.html">Indian Trail</a>, <a href="fort-mill.html">Fort Mill</a>, <a href="tega-cay.html">Tega Cay</a>, <a href="lake-wylie.html">Lake Wylie</a>, <a href="rock-hill.html">Rock Hill</a></p>
         </div>
       </aside>
     </div>
@@ -194,22 +204,29 @@
       <p class="lede">Same-day response &mdash; no waiting, no runaround.</p>
     </div>
     <div class="qbig" data-reveal data-delay="90">
-      <form action="https://formspree.io/f/mjgzpyga" method="POST">
-        <div class="f2">
+      <form class="qform" action="https://formspree.io/f/mjgzpyga" method="POST">
+        <div class="f2 f2-keep">
           <div class="f"><label for="b-fn">First name</label><input id="b-fn" type="text" name="first_name" autocomplete="given-name" required></div>
           <div class="f"><label for="b-ln">Last name</label><input id="b-ln" type="text" name="last_name" autocomplete="family-name"></div>
         </div>
         <div class="f2">
-          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" required><p class="consent-ph">By submitting you agree we may text you about your request. Msg &amp; data rates may apply. Reply STOP to opt out.</p></div>
+          <div class="f"><label for="b-ph">Phone</label><input id="b-ph" type="tel" inputmode="tel" pattern="\D*1?\D*[2-9]\d{2}\D*\d{3}\D*\d{4}\D*" title="Enter your full 10-digit phone number" name="phone" autocomplete="tel" placeholder="704-000-0000" required></div>
           <div class="f"><label for="b-em">Email</label><input id="b-em" type="email" name="email" autocomplete="email"></div>
         </div>
-        <div class="f"><label for="b-sv">Service needed</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option></select></div>
-        <div class="f"><label for="b-ms">Tell us about the job</label><textarea id="b-ms" name="message" rows="3"></textarea></div>
+        <label class="f-check" for="b-sms"><input id="b-sms" type="checkbox" name="sms_consent" value="yes" required><span>Text me about my quote. Msg &amp; data rates may apply. Reply STOP to opt out.</span></label>
+        <div class="f"><label for="b-sv">Service</label><select id="b-sv" name="service" required><option value="" disabled selected>Select a service</option><option>Junk Removal</option><option>Garage Cleanout</option><option>Storage Unit Cleanout</option><option>Moving</option><option>Hauling</option><option>TV Mounting</option><option>Flooring</option><option>Handyman</option><option>Multiple Services</option><option value="Other">Other &mdash; I&rsquo;ll describe it</option></select></div>
+        <div class="f f-other" id="b-other-wrap" hidden><label for="b-other">Tell us what you need</label><input id="b-other" type="text" name="other_service" placeholder="e.g. playground assembly, shed teardown&hellip;"></div>
+        <div class="f2 f2-keep">
+          <div class="f"><label for="b-dy">Preferred day</label><input id="b-dy" type="date" name="preferred_day"></div>
+          <div class="f"><label for="b-tm">Preferred time</label><select id="b-tm" name="preferred_time"><option value="" selected>Any time</option><option value="Morning (8am-12pm)">Morning (8am&ndash;12pm)</option><option value="Afternoon (12pm-5pm)">Afternoon (12pm&ndash;5pm)</option><option value="Evening (5pm-8pm)">Evening (5pm&ndash;8pm)</option><option value="Flexible">Flexible</option></select></div>
+        </div>
+        <div class="f"><label for="b-ms">What needs done?</label><textarea id="b-ms" name="message" rows="3" placeholder="Quick description&hellip;"></textarea></div>
         <div class="f"><label for="b-pc">Promo code (optional)</label><input id="b-pc" type="text" name="promo_code" placeholder="e.g. WELCOME10"></div>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-            <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
-            <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
-        <button type="submit" class="fsub">Get My Free Estimate</button>
+        <input type="hidden" name="_next" value="https://mountnmuscle.com/thanks.html">
+        <input type="hidden" name="_subject" value="Mount N Muscle - Quote Request">
+        <p class="trust trust-form"><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener" aria-label="Rated 5.0 on Google from 100+ reviews">★★★★★ 5.0 on Google · 100+ reviews</a></p>
+        <button type="submit" class="fsub">Get My Free Quote</button>
       </form>
       <p class="q-alt">Or call or text directly &mdash; <a href="tel:+17042370164">704-237-0164</a></p>
     </div>
@@ -231,12 +248,12 @@
           <a href="https://www.tiktok.com/@mountnmuscle" target="_blank" rel="noopener" class="soc" aria-label="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
         </div>
       </div>
-      <div class="fcol"><h4>Services</h4><ul><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li></ul></div>
-      <div class="fcol"><h4>Areas</h4><ul><li><a href="charlotte.html">Charlotte, NC</a></li><li><a href="huntersville.html">Huntersville, NC</a></li><li><a href="fort-mill.html">Fort Mill, SC</a></li><li><a href="rock-hill.html">Rock Hill, SC</a></li><li><a href="gastonia.html">Gastonia, NC</a></li><li><a href="matthews.html">Matthews, NC</a></li><li><a href="concord.html">Concord, NC</a></li><li><a href="mooresville.html">Mooresville, NC</a></li></ul></div>
+      <div class="fcol"><h4>Services</h4><ul><li><a href="junk-removal.html">Junk Removal</a></li><li><a href="mattress-removal.html">Mattress Removal</a></li><li><a href="appliance-removal.html">Appliance Removal</a></li><li><a href="hot-tub-removal.html">Hot Tub Removal</a></li><li><a href="garage-cleanout.html">Garage Cleanout</a></li><li><a href="storage-unit-cleanout.html">Storage Unit Cleanout</a></li><li><a href="moving.html">Moving</a></li><li><a href="hauling.html">Hauling</a></li><li><a href="tv-mounting.html">TV Mounting</a></li><li><a href="flooring.html">Flooring</a></li><li><a href="handyman.html">Handyman</a></li></ul></div>
+      <div class="fcol"><h4>Areas</h4><ul><li><a href="charlotte.html">Charlotte, NC</a></li><li><a href="steele-creek.html">Steele Creek, NC</a></li><li><a href="huntersville.html">Huntersville, NC</a></li><li><a href="fort-mill.html">Fort Mill, SC</a></li><li><a href="rock-hill.html">Rock Hill, SC</a></li><li><a href="gastonia.html">Gastonia, NC</a></li><li><a href="matthews.html">Matthews, NC</a></li><li><a href="concord.html">Concord, NC</a></li><li><a href="mooresville.html">Mooresville, NC</a></li></ul></div>
       <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+17042370164">704-237-0164</a></li><li><a href="mailto:info@mountnmuscle.com">info@mountnmuscle.com</a></li><li class="fhours">Mon&ndash;Sat 7am&ndash;8pm<br>Sun 8am&ndash;8pm</li><li><a href="review.html">Leave a Review</a></li><li><a href="index.html#quote">Free Quote</a></li><li><a href="index.html#vip">VIP List</a></li><li><a href="index.html#referral">Referral Credits</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="es.html" hreflang="es" lang="es">En español</a></li><li><a href="https://maps.google.com/?cid=1061662564359275114" target="_blank" rel="noopener">Our Google Reviews</a></li><li><a href="https://www.yelp.com/biz/mount-n-muscle-charlotte" target="_blank" rel="noopener">Find Us on Yelp</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Service Terms</a></li></ul></div>
     </div>
     <div class="fbot">
-      <p>&copy; 2026 Mount N Muscle &middot; Charlotte, NC 28278 &middot; 704-237-0164 &middot; Serving the Charlotte Metro</p>
+      <p>&copy; 2026 Mount N Muscle &middot; Charlotte, NC &middot; 704-237-0164 &middot; Serving the Charlotte Metro</p>
       <p>mountnmuscle.com &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Service Terms</a></p>
     </div>
   </div>

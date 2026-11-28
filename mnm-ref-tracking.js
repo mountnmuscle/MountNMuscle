@@ -222,6 +222,72 @@
     });
   }
 
+  /* ------------------------------------------------------------------
+   * GA4 events (added Nov 28 2026). The gtag.js snippet for
+   * G-SR09EGY1LG sits in every page <head>; these only fire when it is
+   * there, so a blocked or missing tag never breaks a form.
+   *
+   *   generate_lead  - a quote form passed browser validation and is
+   *                    submitting (VIP signups send sign_up instead, so
+   *                    the lead count stays quote-only)
+   *   click_to_call  - any tel: link tap (nav, sticky bar, body, footer)
+   *
+   * Mark both as key events in GA4 Admin > Events.
+   * ------------------------------------------------------------------ */
+  function ga(name, params) {
+    try {
+      if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+    } catch (e) {}
+  }
+
+  function pageSlug() {
+    return ((window.location.pathname || '/').replace(/^\/|\.html$/g, '') || 'home').replace(/^index$/, 'home');
+  }
+
+  function linkLocation(el) {
+    if (el.closest('nav')) return 'nav';
+    if (el.closest('#scta')) return 'sticky_bar';
+    if (el.closest('.mobile-menu')) return 'mobile_menu';
+    if (el.closest('footer')) return 'footer';
+    if (el.closest('form, .rail-card, .qcard, .qbig')) return 'quote_card';
+    return 'body';
+  }
+
+  function bindEvents() {
+    var forms = document.querySelectorAll('form[action*="formspree.io"]');
+    Array.prototype.forEach.call(forms, function (form) {
+      form.addEventListener('submit', function () {
+        var subject = form.querySelector('input[name="_subject"]');
+        var isQuote = !subject || /Quote Request/.test(subject.value);
+        var service = form.querySelector('[name="service"]');
+        var src = form.querySelector('input[name="lead_source"]');
+        ga(isQuote ? 'generate_lead' : 'sign_up', {
+          form_id: form.querySelector('[id]') ? form.querySelector('[id]').id.split('-')[0] : '',
+          service: service ? service.value : '',
+          lead_source: src ? src.value : '',
+          page: pageSlug(),
+          language: form.querySelector('input[name="language"]') ? 'es' : 'en'
+        });
+      });
+      // "Other" service reveals the describe-it field on every page.
+      var sel = form.querySelector('select[name="service"]');
+      var wrap = form.querySelector('.f-other');
+      if (sel && wrap) {
+        var sync = function () { wrap.hidden = sel.value !== 'Other'; };
+        sel.addEventListener('change', sync); sync();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (!a) return;
+      ga('click_to_call', {
+        link_location: linkLocation(a),
+        phone_number: a.getAttribute('href').replace(/^tel:/, ''),
+        page: pageSlug()
+      });
+    }, true);
+  }
+
   function init() {
     var attr = {};
     try { attr = resolveAttribution() || {}; } catch (e) { attr = {}; }
@@ -234,6 +300,7 @@
     }
     stampForms(source);
     try { stampAttribution(attr); } catch (e) {}
+    try { bindEvents(); } catch (e) {}
   }
 
   if (document.readyState === 'loading') {

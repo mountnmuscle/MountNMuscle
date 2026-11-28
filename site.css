@@ -8,3 +8,24 @@ h1 em,h2 em,h3 em,h4 em,.h1 em,.h2 em,.logo em{font-style:normal}
 .skip-link{position:absolute;left:8px;top:-60px;z-index:1000;background:var(--ink);color:var(--cream);padding:10px 16px;font-weight:600;text-decoration:none;border-radius:4px}.skip-link:focus{top:8px}
 .upd{font-size:.8rem;letter-spacing:.04em;color:var(--bronze-dark,#7A5F26);margin:.25rem 0 1rem}
 [id="main"]:focus{outline:none}
+
+/* 2026-11-28: unified quote form + Google trust line */
+.f-check{display:flex;gap:10px;align-items:flex-start;margin:0 0 var(--s2);font-size:.74rem;line-height:1.45;color:var(--ink-3);cursor:pointer}
+.f-check input{flex:0 0 auto;width:18px;height:18px;margin-top:1px;accent-color:var(--bronze-deep)}
+.trust{margin:0 0 var(--s3);font-size:.9rem;font-weight:600;letter-spacing:.01em}
+.trust a{color:var(--bronze-deep);text-decoration:none;border-bottom:1px solid transparent}
+.trust a:hover{border-bottom-color:currentColor}
+.trust-form{text-align:center;margin:0 0 10px;font-size:.84rem}
+.sub-hero .trust,.hero-l .trust{margin:var(--s3) 0 0}
+.rail-card .qform .f,.qcard .qform .f{margin-bottom:10px}
+.qcard .qform .f2{gap:12px}
+.qcard .qform input,.qcard .qform select,.qcard .qform textarea{padding:10px 12px}
+.qcard .qform label{margin-bottom:4px}
+.rail-card .qform .f2{gap:10px}
+.rail-card .qform input,.rail-card .qform select,.rail-card .qform textarea{padding:10px 11px;font-size:16px}
+.dump{background:var(--paper);border:1px solid var(--hairline);border-left:3px solid var(--bronze);padding:var(--s3) var(--s4);margin:var(--s4) 0}
+.dump h2{margin-top:0}
+.rail-card .fine{font-size:.78rem;color:var(--ink-3);text-align:center;margin:10px 0 0}
+.rail-card .fine a,.qcard p a{color:var(--bronze-deep)}
+@media(max-width:600px){.qform .f2.f2-keep{grid-template-columns:1fr 1fr}}
+@media(min-width:961px){.rail{position:static}}

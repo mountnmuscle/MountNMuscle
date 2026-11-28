@@ -1,11 +1,11 @@
 # Mount N Muscle
 
-> Owner-operated home services across the Charlotte, NC metro — junk removal, moving, hauling, TV mounting, flooring, and handyman work. Published rates, free estimates, same-day response. 5.0 stars on Google across 100+ reviews.
+> Owner-operated home services across the Charlotte, NC metro — junk removal, moving, hauling, TV mounting, flooring, and handyman work. Published rates, free quotes, same-day response. 5.0 stars on Google across 100+ reviews.
 
 ## Contact
 - Phone / text: 704-237-0164
 - Website: https://mountnmuscle.com
-- Base: Steele Creek, Charlotte, NC 28278
+- Base: Steele Creek, Charlotte, NC
 - Google listing: https://maps.google.com/?cid=1061662564359275114
 
 ## Junk removal — priced by the space the load takes
@@ -13,15 +13,22 @@
 - Covers household and office goods. Concrete, brick, dirt, roofing, drywall and demolition debris, oversized items, and shed/deck/hot tub/pool teardowns are quoted separately. Asbestos is never accepted.
 - Usable items get donated and metal gets recycled where possible.
 - Surcharges: mattress or box spring +$25 each · refrigerant appliance +$40 · tire +$8 · paint, e-waste and regulated items at disposal cost
+- Mattress removal: one mattress $120 ($95 + $25). Appliance removal: washer, dryer or range $135; full-size fridge or chest freezer $175; we disconnect but never reconnect. Hot tub removal: one flat quote from photos covering teardown, haul-away and disposal; power must be disconnected and the tub drained first
+- Rather than renting a dumpster: we load, haul the same visit and sweep up, priced by space from $95 to $700
 
 ## TV mounting — flat rate
 - Up to 60" $99 · 61–75" $149 · 76–85" $199 · 86" and up custom quote (two-person minimum) · over fireplace, stone or brick from $199 · each additional TV in the same visit 25% off mount labor (add-ons excluded)
 - Add-ons: stick-on cord concealment $39 · in-wall cord concealment from $89 · flat mount supplied and installed $40 · full-motion mount supplied and installed $65 · protective transport box $25 per TV
 - $99 is all-in for the labor: finding studs, leveling, mounting and cleanup, with travel built in
 
-## Labor and crews
+## Moving
+- Every move is quoted as one price once we know what is going — no hourly rate. Small moves, single rooms, storage unit runs and loading or unloading a truck or container you rented yourself are all welcome
+- Every move includes two dollies and about 20 moving blankets. TV boxes available to rent or buy. A flat $100 deposit holds the date
+- Local moves only; no interstate household moves
+
+## Labor and crews (handyman and hauling)
 - Solo labor / handyman $70/hr ($140 minimum)
-- Two-person crew $135/hr ($270 minimum)
+- Two-person hauling or handyman crew $135/hr ($270 minimum)
 - Trailer add-on to any crew rate: open utility trailer +$35/hr · 16ft enclosed +$60/hr
 - Two-hour minimum on all hourly work, 30-minute increments after. Saturday and Sunday two-person crew bookings carry a three-hour minimum ($405, or $585 with the 16ft trailer) and no weekend surcharge. Solo handyman keeps the two-hour minimum every day.
 
@@ -33,7 +40,7 @@
 - Travel is built into the number we quote — no separate trip charge
 
 ## Other add-ons
-- Stairs +$25 per flight above the first · heavy or awkward item from +$40 · same-day or emergency +$40 · Sunday +15% on flat-rate jobs only, never on hourly crew work
+- Stairs +$25 per flight above the first · heavy or awkward item from +$40 · same-day or emergency +$40 · Sunday +15% on flat-rate jobs only
 - Card payments carry a 3.5% processing fee. Cash, check, and Zelle also accepted.
 
 ## Services
@@ -45,10 +52,13 @@
 - [Handyman](https://mountnmuscle.com/handyman.html)
 - [Garage Cleanout](https://mountnmuscle.com/garage-cleanout.html)
 - [Storage Unit Cleanout](https://mountnmuscle.com/storage-unit-cleanout.html)
+- [Mattress Removal](https://mountnmuscle.com/mattress-removal.html)
+- [Appliance Removal](https://mountnmuscle.com/appliance-removal.html)
+- [Hot Tub Removal](https://mountnmuscle.com/hot-tub-removal.html)
 - [En español](https://mountnmuscle.com/es.html) — full Spanish versions of the homepage and every service page (es-junk-removal.html, es-tv-mounting.html, es-moving.html, es-hauling.html, es-flooring.html, es-handyman.html, es-garage-cleanout.html, es-storage-unit-cleanout.html)
 
 ## Service areas
-Charlotte, Huntersville, Concord, Mooresville, Matthews, Pineville, Ballantyne, Mount Holly, Gastonia, Waxhaw, Stallings, Indian Trail (NC) · Fort Mill, Tega Cay, Lake Wylie, Rock Hill (SC)
+Charlotte (including [Steele Creek](https://mountnmuscle.com/steele-creek.html), our home base), Huntersville, Concord, Mooresville, Matthews, Pineville, Ballantyne, Mount Holly, Gastonia, Waxhaw, Stallings, Indian Trail (NC) · Fort Mill, Tega Cay, Lake Wylie, Rock Hill (SC)
 
 ## Promotions
 One promotion per booking — discounts never stack. WELCOME10 gives 10% off a first booking for residents of partner properties.
